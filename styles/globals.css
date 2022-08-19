@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.description{
+  background: url("../public/portfoliobg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  padding: 1em;
+}

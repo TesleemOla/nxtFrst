@@ -1,0 +1,46 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* margin: 0; */
+}
+.navbarlg{
+    display: none;
+ 
+}
+
+.navbarsm{
+    display: flex;
+    background: green;
+    color: white;
+    padding: 1em;
+}
+.close{
+    font-size: 1.5em;
+}
+.dropdown{
+    background: lightgreen;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    position: absolute;
+    top: 4em;
+    left: 0;
+}
+
+.navitem{
+    padding: 1em;
+    border-bottom: white 2px solid;
+}
+
+@media screen and (min-width: 600px){
+    .navbarlg{
+        display: flex;
+        background: green;
+        color: white;
+        padding: 1em;
+    }
+    .navbarsm{
+        display: none;
+    }
+}
