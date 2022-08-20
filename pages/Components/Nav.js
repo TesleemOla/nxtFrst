@@ -6,15 +6,20 @@ import { useState } from "react"
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
+ 
   return (
     <nav className={styles.navbar}>
+      <Link href="/" classname={styles.logo}>
+        <h1>{"<Tesleem/>"}</h1>
+      </Link>
       <div className={styles.navbarsm}>
         {!isOpen?
 
-        <GiHamburgerMenu onClick={()=> setIsOpen(!isOpen)} className={styles.close}/>:
+        <GiHamburgerMenu onClick={()=> setIsOpen(!isOpen)} className={styles.open}/>:
         <div>
 
             <FaTimes onClick={() => setIsOpen(!isOpen)} className={styles.close} />
+          
           <div className={styles.dropdown}>
             <Link href="/" >
                 <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
@@ -42,25 +47,36 @@ const Nav = () => {
               </div>
             </Link>
           </div>
+         
         </div>
 }
       </div>
       <div className={styles.navbarlg}>
         
         <Link href="/">
+          <div className={styles.navitem}>
             Home
+          </div>
         </Link>
         <Link href="/About">
+          <div className={styles.navitem}>
             About
+          </div>
         </Link>
         <Link href="/Skills">
-          Skills
+          <div className={styles.navitem}>
+            Skills
+          </div>
         </Link>
         <Link href="/Projects">
-          Project
+          <div className={styles.navitem}>
+            Project
+          </div>
         </Link>
         <Link href="/Contact">
+          <div className={styles.navitem}>
             Contact
+          </div>
         </Link>
       </div>
         

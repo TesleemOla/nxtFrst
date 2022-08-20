@@ -5,14 +5,27 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <main>
-        <div className="description">
+      <main className={styles.main}>
+        <section className="description">
           <div>
             <h1> My name is Tesleem,</h1>
             <h5>A front-End Developer</h5>
-            <button className={styles.homebtn}> Hire me</button>
+            <button className={styles.hirebtn}> Hire me</button>
+            <button className={styles.contactbtn}>Contact me</button>
           </div>
-        </div>
+        </section>
+        <section>
+          <div className={styles.game}>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+            <div className={styles.ball}></div>
+          </div>
+        </section>
       </main>
     </div>
     

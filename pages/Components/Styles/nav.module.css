@@ -2,7 +2,12 @@
     position: sticky;
     top: 0;
     left: 0;
-    /* margin: 0; */
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
 }
 .navbarlg{
     display: none;
@@ -11,36 +16,67 @@
 
 .navbarsm{
     display: flex;
-    background: green;
-    color: white;
     padding: 1em;
+    animation: 2s slideout;
 }
-.close{
+.close, .open{
     font-size: 1.5em;
 }
+@keyframes slidein {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+
+    to {
+        width: 50vw;
+        opacity: 0;
+    }
+}
+@keyframes slideout {
+    from {
+        width: 50vw;
+        opacity: 1;
+    }
+
+    to {
+        width: 0;
+        opacity: 0;
+    }
+}
+
 .dropdown{
-    background: lightgreen;
+    background:grey;
     display: flex;
     flex-direction: column;
     width: 50vw;
     position: absolute;
     top: 4em;
     left: 0;
+    animation: 0.8s linear running slidein;
 }
+
 
 .navitem{
     padding: 1em;
-    border-bottom: white 2px solid;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 600px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .navbarlg{
         display: flex;
-        background: green;
-        color: white;
+        justify-content: space-around;
         padding: 1em;
     }
     .navbarsm{
         display: none;
+    }
+    .navitem{
+        cursor: pointer;
     }
 }

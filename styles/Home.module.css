@@ -1,6 +1,17 @@
-.homebtn{
+/* .main{
+  display: flex;
+} */
+.hirebtn, .contactbtn{
   color: white;
   background: green;
   padding: 0.7em;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+.contactbtn{
+  background: red;
+}
+
+.game{
+  width: 40vw;
+  height: 120vh;
 }
