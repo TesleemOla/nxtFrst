@@ -1,17 +1,33 @@
-/* .main{
-  display: flex;
-} */
-.hirebtn, .contactbtn{
-  color: white;
-  background: green;
-  padding: 0.7em;
-  border-radius: 10px;
+.main{
+  height: max-content;
+  background: rgba(0,0,0,0.9)
 }
-.contactbtn{
-  background: red;
+.hirebtn, .contactbtn{
+  background: transparent;
+  border-radius: 4px;
+  border: 2px solid var(--1, #9358F7);
+  height: 55px;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 1em;
+  margin-left: 0;
+  padding: 1em;
 }
 
 .game{
   width: 40vw;
-  height: 120vh;
+  background: transparent;
+  border: 1px solid #ccc;
+  margin: 1em auto;
+}
+.ball{
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #b3d9ff;
 }

@@ -17,51 +17,36 @@
 .navbarsm{
     display: flex;
     padding: 1em;
-    animation: 2s slideout;
 }
 .close, .open{
     font-size: 1.5em;
 }
-@keyframes slidein {
-    from {
-        width: 0;
-        opacity: 1;
-    }
 
-    to {
-        width: 50vw;
-        opacity: 0;
-    }
-}
-@keyframes slideout {
-    from {
-        width: 50vw;
-        opacity: 1;
-    }
-
-    to {
-        width: 0;
-        opacity: 0;
-    }
-}
 
 .dropdown{
-    background:grey;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.4em;
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 70vw;
+    height: 70vh;
     position: absolute;
-    top: 4em;
+    top: 3em;
     left: 0;
-    animation: 0.8s linear running slidein;
+    transition: 0.5s
+   
 }
 
 
 .navitem{
     padding: 1em;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-weight: 600;
 }
+
 
 @media screen and (min-width: 600px){
     .navbar{

@@ -1,0 +1,25 @@
+.lbcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.cninp{
+    padding: 0.5em 1em;
+
+}
+.cntxtar{
+    width: 100%;
+    padding: 0.5em 1em;
+    height: 40vh;
+}
+
+.cnerr::placeholder{
+    color: red;
+}
+
+.sub-btn{
+    background-color: rgba(0,0,0,0.8);
+    color:#fff
+
+}
