@@ -1,10 +1,9 @@
-import Nav from "../../Components/Nav"
+import PagesLayout from "../layout";
 import { Html5Outlined } from "@ant-design/icons"
 
 const Skills = () => {
     return (
-        <div>
-            <Nav/>
+        <PagesLayout>
             <h1>skills</h1>
             <main className="main">
                 <div>
@@ -19,7 +18,7 @@ const Skills = () => {
                 </div>
 
             </main>
-        </div>
+        </PagesLayout>
     )
 }
 

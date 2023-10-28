@@ -1,9 +1,9 @@
-import Nav from "../../Components/Nav";
+import PagesLayout from "../layout";
+
 
 const About = () => {
   return (
-    <div>
-        <Nav />
+    <PagesLayout>
         <h1>about</h1>
         <main className="main">
         <section>
@@ -29,7 +29,7 @@ const About = () => {
         </section>
         
         </main>
-    </div>
+    </PagesLayout>
     
   )
 }

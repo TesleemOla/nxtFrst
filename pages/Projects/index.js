@@ -1,20 +1,20 @@
-import Nav from "../../Components/Nav";
+import PagesLayout from "../layout";
 import Image  from "next/image"
 import { projects } from "./data";
 import styles from "./projects.module.css"
 
 const Projects=()=>{
     return (
-        <div>
-            <Nav/>
+        <PagesLayout>
+      
         <section className={styles.projectgrid}>
             {
                 projects.map(({ name, imgsrc, description, skills, github, livesite},i)=>{
                     return(
                         <div key={i} className={styles.singleproject}>
                             <Image src={imgsrc} alt={name}
-                            width= {100}
-                            height={100} />
+                            width= {250}
+                            height={250} />
                             <p className={styles.name}>{name}</p>
                             <p>{description}</p>
                             <div className={styles.btns}>
@@ -26,7 +26,7 @@ const Projects=()=>{
                 })
             }
         </section>
-        </div>
+        </PagesLayout>
     )
 }
 

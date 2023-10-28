@@ -7,8 +7,20 @@
     line-height: normal;
     text-transform: uppercase;
 }
+.projectgrid{
+    margin:1em auto;
+    display: flex;
+    flex-wrap: wrap
+}
 .singleproject{
-    margin: 1em auto
+    margin: 1em auto;
+    width: 30vw;
+    display: grid;
+}
+.name, .btns{
+    padding: 1em;
+    font-size: 0.9em;
+    width: 80%;
 }
 .btngt, .btndm{
     border-radius: 4px;
@@ -23,7 +35,14 @@
 }
 
 @media screen and (min-width: 768px){
+    .singleproject{
+        width: 20em;
+            background: var(--White, #FFF);
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    }
     .singleproject:hover{
-        /* box-shadow: ; */
+        box-shadow: grey 10px 5px 0 0 0;
+        cursor: pointer;
+        transform: scale(0.9)
     }
 }
