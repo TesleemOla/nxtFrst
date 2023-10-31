@@ -1,3 +1,4 @@
+
 .name{
     color: #1A1A1A;
     font-family: Inter;
@@ -6,39 +7,51 @@
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+    text-align: left;
 }
 .projectgrid{
     margin:1em auto;
     display: flex;
-    flex-wrap: wrap
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .singleproject{
-    margin: 1em auto;
-    width: 30vw;
+    margin: 1em;
+    width: 80%;
     display: grid;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0px 4px 20px 0px var(--lightblack);
 }
 .name, .btns{
     padding: 1em;
     font-size: 0.9em;
-    width: 80%;
+    font-weight: 800;
+    /* width: 80%; */
 }
 .btngt, .btndm{
     border-radius: 4px;
-    border: 2px solid #9358F7;
+    background:var(--prp);
     padding: 0.5em 1em;
-    background: #fff;
+    color: #fff;
     margin: 0 1em;
+    cursor: pointer;
+    border: 0;
 }
 
 .btndm{
-    border: 1px solid red;
+    background: var(--red);
 }
 
 @media screen and (min-width: 768px){
+    .projectgrid{
+        flex-direction: row;
+        flex-wrap: wrap
+    }
     .singleproject{
         width: 20em;
             background: var(--White, #FFF);
-            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+            
     }
     .singleproject:hover{
         box-shadow: grey 10px 5px 0 0 0;

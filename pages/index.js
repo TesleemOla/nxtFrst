@@ -1,15 +1,14 @@
 import { useRouter } from "next/router"
-import Nav from "../Components/Nav"
+import PagesLayout from "./layout";
 import styles from "../styles/Home.module.css"
+
 
 const Home = () => {
 
-
   const router = useRouter()
-
   return (
-    <div>
-      <Nav />
+
+        <PagesLayout>
       <main className={styles.main}>
         <section className="description">
           <div>
@@ -18,22 +17,21 @@ const Home = () => {
             <button className={styles.hirebtn}> Hire me</button>
             <button className={styles.contactbtn} onClick={()=> router.push("/Contact") }>Contact me</button>
           </div>
-        </section>
-        <section>
-          <div className={styles.game}>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-            <div className={styles.ball}></div>
-          </div>
-        </section>
-     
+        </section>  
+
+
+          <h1>Skills</h1>
+            <div>
+              <div>
+                <p>HTML</p>
+              </div>
+            </div>
+
       </main>
-    </div>
+
+        </PagesLayout>
+        
+    
     
   )
 }

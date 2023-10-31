@@ -16,7 +16,7 @@ const Nav = () => {
   //   delay: 0
   // });
   const [isOpen, setIsOpen] = useState(false)
-  const [links, setLinks] = useState(["Home", "About", "Skills", "Projects", "Contact"])
+  const [links, setLinks] = useState(["Home", "About", "Projects", "Contact"])
 
 
   return (
@@ -35,37 +35,16 @@ const Nav = () => {
           <div className={styles.dropdown} >
             {
               links.map((item,i)=> {
-     
-                if( router.pathname !== `/${item}`){
+
                 return <Link key ={i} href={item === "Home"? "/": `/${item}` } >
                   
                   <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
                     {item}
                   </div>
-                </Link>}
+                </Link>
               })
             }
-{/*             
-            <Link href="/About">
-              <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
-                About
-              </div>
-            </Link>
-            <Link href="/Skills">
-                <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
-                Skills
-              </div>
-            </Link>
-            <Link href="/Projects">
-                <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
-                Project
-              </div>
-            </Link>
-            <Link href="/Contact">
-                <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
-                Contact
-              </div>
-            </Link> */}
+
           </div> 
          
         </div>
@@ -75,12 +54,11 @@ const Nav = () => {
         {
           links.map((item, i) => {
             
-            if (router.pathname !== `/${item}`) {
             return <Link key={i} href={item === "Home" ? "/" : `/${item}`}>
               <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
                 {item}
               </div>
-            </Link>}
+            </Link>
           })
         }
       </div>

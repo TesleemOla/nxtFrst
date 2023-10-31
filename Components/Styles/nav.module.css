@@ -8,6 +8,11 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
+    z-index: 10000;
+}
+.logo{
+    margin: 2px auto;
+    cursor: pointer;
 }
 .navbarlg{
     display: none;

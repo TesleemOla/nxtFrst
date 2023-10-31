@@ -18,8 +18,13 @@ const Projects=()=>{
                             <p className={styles.name}>{name}</p>
                             <p>{description}</p>
                             <div className={styles.btns}>
-                                <button className={styles.btngt}>Github</button>
-                                <button className={styles.btndm}>Live Demo</button>
+                                <button className={styles.btngt}>
+                                    <a href={github} target="_blank" rel="noopener noreferrer">Github</a></button>
+                                <button className={styles.btndm}>
+                                    <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
+                            </div>
+                            <div>
+                                {skills.map((item,i)=> <span key={i}> {item} </span>)}
                             </div>
                         </div>
                     )

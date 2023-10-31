@@ -3,14 +3,14 @@ import Nav from "../Components/Nav"
 
 const PagesLayout = ({children}) => {
   return (
-    <html lang="en">
-      <header>
+    <>
+      
         <Nav/>
-      </header>
-      <body>
+      
+      <section style={{background: "#000"}}>
         {children}
-      </body>
-    </html>
+      </section>
+    </>
   )
 }
 

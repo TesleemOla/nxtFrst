@@ -5,6 +5,7 @@ import { GithubOutlined, CodepenOutlined, LinkedinOutlined  } from "@ant-design/
 import { Button } from "@ant-design/icons"
 import styles from "./styles/contact.module.css"
 
+
 const Contact = () => {
   const validationSchema= yup.object({
     email: yup

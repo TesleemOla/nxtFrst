@@ -35,7 +35,7 @@ export let projects = [{
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
     classes: ["react", "node", "html-css"],
     github: "https://github.com/Tasleemofx/webscrapper",
-    livesite: "https://webscrapperfrontend.vercel.app/News"
+    livesite: "http://webscrapperfrontend.vercel.app/"
 
 },
 {
