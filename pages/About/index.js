@@ -1,9 +1,8 @@
-import PagesLayout from "../layout";
 import styles from "./about.module.css"
 
 const About = () => {
   return (
-    <PagesLayout>
+    <>
         <h1>about</h1>
         <main className="main">
         <section>
@@ -38,7 +37,7 @@ const About = () => {
         </section>
         
         </main>
-    </PagesLayout>
+    </>
     
   )
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect} from "react"
-import PagesLayout from "../layout";
 import Image  from "next/image"
 import { projects } from "./data";
 import styles from "./projects.module.css"
@@ -16,7 +15,6 @@ const Projects=()=>{
     }
     }
     return (
-        <PagesLayout>
       
         <section className={styles.projectgrid}>
             {
@@ -42,7 +40,7 @@ const Projects=()=>{
                 })
             }
         </section>
-        </PagesLayout>
+        
     )
 }
 

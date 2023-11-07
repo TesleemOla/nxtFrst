@@ -1,4 +1,3 @@
-import PagesLayout from "../layout";
 import { useFormik } from "formik";
 import * as yup from "yup"
 import { GithubOutlined, CodepenOutlined, LinkedinOutlined  } from "@ant-design/icons";
@@ -28,7 +27,7 @@ const Contact = () => {
     },
   });
   return (
-      <PagesLayout>
+      <>
           <h1>Contact</h1>
           <section>
             <form onSubmit={formik.handleSubmit}>
@@ -54,7 +53,7 @@ const Contact = () => {
           <button><LinkedinOutlined /> </button>
       <button><CodepenOutlined /></button>
       <button><GithubOutlined /></button>
-      </PagesLayout>
+</>
   )
 }
 

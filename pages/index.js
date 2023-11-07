@@ -1,5 +1,4 @@
 import { useRouter } from "next/router"
-import PagesLayout from "./layout";
 import styles from "../styles/Home.module.css"
 
 
@@ -8,7 +7,7 @@ const Home = () => {
   const router = useRouter()
   return (
 
-        <PagesLayout>
+       
       <main className={styles.main}>
         <section className="description">
           <div>
@@ -29,7 +28,7 @@ const Home = () => {
 
       </main>
 
-        </PagesLayout>
+       
         
     
     
