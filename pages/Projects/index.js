@@ -1,9 +1,20 @@
+import { useState, useEffect} from "react"
 import PagesLayout from "../layout";
 import Image  from "next/image"
 import { projects } from "./data";
 import styles from "./projects.module.css"
 
 const Projects=()=>{
+    const [fadeIn, setFadeIn] = useState(false)
+
+    useEffect(()=>{
+        setFadeIn(true)
+    },[])
+    const anims=(i) => {
+       return { transform: !fadeIn ? 'scale(0)': 'scale(1)',
+        transition: `ease-in ${i+1}s`
+    }
+    }
     return (
         <PagesLayout>
       
@@ -11,7 +22,7 @@ const Projects=()=>{
             {
                 projects.map(({ name, imgsrc, description, skills, github, livesite},i)=>{
                     return(
-                        <div key={i} className={styles.singleproject}>
+                        <div key={i} className={styles.singleproject} style={anims(i)}>
                             <Image src={imgsrc} alt={name}
                             width= {250}
                             height={250} />

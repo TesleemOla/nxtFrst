@@ -1,11 +1,19 @@
 
 export let projects = [{
+    name: "GetLinked",
+    imgsrc:"/images/getlinked-ai.png",
+    description: "GetLinked Hackathon website",
+    skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "node", "js"],
+    classes: ["react", "html-css"],
+    github:"https://github.com/TesleemOla/GetLinked",
+    livesite: "https://get-linked-alpha.vercel.app/"
+},{
     name: "Ecommerce website",
     imgsrc: "/images/ecommerce.png",
     description: "A full ecommerce website made with fakestore api, complete with flutterwave card checkout",
     skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "node", "js"],
     classes: ["react", "html-css"],
-    github: "https://github.com/Tasleemofx/ecommercefsapi",
+    github: "https://github.com/TesleemOla/ecommercefsapi",
     livesite: "https://ecommercefsapi.vercel.app/"
 
 },
@@ -15,7 +23,7 @@ export let projects = [{
     description: "Created with vite, Lendsqr homepage and dashboard with data from a REST API",
     skills: ["html5", "css3-alt", "git-alt", "github", "js", "react", "sass", "typescript"],
     classes: ["react", "ts", "html-css"],
-    github: "https://github.com/Tasleemofx/lendsqr-fe-test",
+    github: "https://github.com/TesleemOla/lendsqr-fe-test",
     livesite: "https://tesleem-oladepo-lendsqr-fe-test.vercel.app/"
 },
 {
@@ -24,7 +32,7 @@ export let projects = [{
     description: "A multi-page react app with a Landing page, an articles page and an about page",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
     classes: ["react", "html-css"],
-    github: "https://github.com/Tasleemofx/appleandbanana",
+    github: "https://github.com/TesleemOla/appleandbanana",
     livesite: "https://appleandbanana.vercel.app/"
 
 },
@@ -34,7 +42,7 @@ export let projects = [{
     description: "Crypto News Webscraper built using web scraper API made with node and express.js. Gets up to date news from trusted news websites",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
     classes: ["react", "node", "html-css"],
-    github: "https://github.com/Tasleemofx/webscrapper",
+    github: "https://github.com/TesleemOla/webscrapper",
     livesite: "http://webscrapperfrontend.vercel.app/"
 
 },
@@ -44,7 +52,7 @@ export let projects = [{
     description: "An ecommerce website's admin dashboard",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
     classes: ["react", "html-css"],
-    github: "https://github.com/Tasleemofx/admin-dashboard",
+    github: "https://github.com/TesleemOla/admin-dashboard",
     livesite: "http://admin-dashboard-beryl.vercel.app/"
 
 },
@@ -54,7 +62,7 @@ export let projects = [{
     description: "An ecommerce product page built with react (Hooks)",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
     classes: ["react", "html-css"],
-    github: "https://github.com/Tasleemofx/ecommerce",
+    github: "https://github.com/TesleemOla/ecommerce",
     livesite: "https://sneakers-iota.vercel.app/"
 
 },
@@ -64,7 +72,7 @@ export let projects = [{
     description: "A gift shop website build with React, Typescript and Sass",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js", "sass", "typescript"],
     classes: ["react", "html-css", "ts"],
-    github: "https://github.com/Tasleemofx/giftLabs",
+    github: "https://github.com/TesleemOla/giftLabs",
     livesite: "https://gift-labs.vercel.app/"
 },
 {
@@ -73,7 +81,7 @@ export let projects = [{
     description: "A react app built using REST API showing information about each country with a filter function to search",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js",],
     classes: ["react", "html-css"],
-    github: "https://github.com/Tasleemofx/countrylist",
+    github: "https://github.com/TesleemOla/countrylist",
     livesite: "http://countrylist-rouge.vercel.app/"
 },
 {
@@ -82,8 +90,8 @@ export let projects = [{
     description: "AjoCard Landing page",
     skills: ["html5", "css3-alt", "git-alt", "github", "js"],
     classes: ["html-css"],
-    github: "https://github.com/Tasleemofx/ajocard",
-    livesite: "https://tasleemofx.github.io/ajocard/"
+    github: "https://github.com/TesleemOla/ajocard",
+    livesite: "https://TesleemOla.github.io/ajocard/"
 }
 
 ]

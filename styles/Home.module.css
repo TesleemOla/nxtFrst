@@ -1,7 +1,4 @@
-.main{
-  height: max-content;
-  background: rgba(0,0,0,0.9)
-}
+
 .hirebtn, .contactbtn{
   background: transparent;
   border-radius: 4px;
