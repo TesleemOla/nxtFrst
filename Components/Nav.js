@@ -15,8 +15,8 @@ const Nav = () => {
   const dropdown ={
     width: isOpen?'70vw': "0",
     transition: 'ease-in-out 0.5s',
-    background: '#fff',
-    color: '#000',
+    background: 'var(--black)',
+    color: 'var(--white)',
     fontWeight: 700,
     fontSize: '1.4em',
     flexDirection: 'column',

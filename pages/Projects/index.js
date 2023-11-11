@@ -2,6 +2,7 @@ import { useState, useEffect} from "react"
 import Image  from "next/image"
 import { projects } from "./data";
 import styles from "./projects.module.css"
+import Skills from "../../Components/Skills";
 
 const Projects=()=>{
     const [fadeIn, setFadeIn] = useState(false)
@@ -11,9 +12,11 @@ const Projects=()=>{
     },[])
     const anims=(i) => {
        return { transform: !fadeIn ? 'scale(0)': 'scale(1)',
-        transition: `ease-in ${i+1}s`
+                transition: `ease-in ${i+1}s`
     }
     }
+   
+
     return (
       
         <section className={styles.projectgrid}>
@@ -33,7 +36,7 @@ const Projects=()=>{
                                     <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                             </div>
                             <div>
-                                {skills.map((item,i)=> <span key={i}> {item} </span>)}
+                                {skills.map((item, i) => <span key={i}>{` ${item} `}</span>)}
                             </div>
                         </div>
                     )

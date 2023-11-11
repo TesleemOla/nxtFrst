@@ -7,7 +7,7 @@ const PagesLayout = ({children}) => {
       
         <Nav/>
       
-      <section style={{background: "#000"}}>
+      <section className="pgbg">
         {children}
       </section>
     </>

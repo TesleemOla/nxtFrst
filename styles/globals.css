@@ -6,12 +6,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 :root{
-  --black: #000;
+  --black: linear-gradient(to bottom right, #996633, #666633);
   --lightblack: rgba(0, 0, 0, 0.05);
+  --blue: #6666ef;
   --prp: #9358F7;
-  --white: #fff;
+  --white:  #ccccff;
   --red: red;
-  
+  --fontonly: #996633;
 
 }
 a {
@@ -26,11 +27,27 @@ a {
 .description{
   background-size: cover;
   height: 100vh;
-  color: white;
+  color: var(--fontonly);
   font-size: 1.5em;
   padding: 1em;
 }
+
+@keyframes raisein {
+  0%{
+   background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%
+  }
+  100%{
+    background-position: 0% 50%
+  }
+}
 .main {
   height: max-content;
-  background: rgba(0, 0, 0, 0.9)
+  text-align: center;
+}
+.pgbg{
+  background: #f0fcfc;
+  animation: raisein 5s ease infinite;
 }

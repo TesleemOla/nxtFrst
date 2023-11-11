@@ -3,7 +3,7 @@ export let projects = [{
     name: "GetLinked",
     imgsrc:"/images/getlinked-ai.png",
     description: "GetLinked Hackathon website",
-    skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "node", "js"],
+    skills: ["html", "css", "bootstrap", 'react', "git", "github", "node", "js"],
     classes: ["react", "html-css"],
     github:"https://github.com/TesleemOla/GetLinked",
     livesite: "https://get-linked-alpha.vercel.app/"
@@ -11,7 +11,7 @@ export let projects = [{
     name: "Ecommerce website",
     imgsrc: "/images/ecommerce.png",
     description: "A full ecommerce website made with fakestore api, complete with flutterwave card checkout",
-    skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "node", "js"],
+    skills: ["html", "css", "bootstrap", 'react', "git", "github", "node", "js"],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/ecommercefsapi",
     livesite: "https://ecommercefsapi.vercel.app/"
@@ -21,7 +21,7 @@ export let projects = [{
     name: "Lendsqr",
     imgsrc: "/images/lendsqr.png",
     description: "Created with vite, Lendsqr homepage and dashboard with data from a REST API",
-    skills: ["html5", "css3-alt", "git-alt", "github", "js", "react", "sass", "typescript"],
+    skills: ["html", "css", "git", "github", "js", "react", "sass", "typescript"],
     classes: ["react", "ts", "html-css"],
     github: "https://github.com/TesleemOla/lendsqr-fe-test",
     livesite: "https://tesleem-oladepo-lendsqr-fe-test.vercel.app/"
@@ -30,7 +30,7 @@ export let projects = [{
     name: "Apple and Banana website clone",
     imgsrc: "/images/applenbanana.png",
     description: "A multi-page react app with a Landing page, an articles page and an about page",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+    skills: ["html", "css", 'react', "git", "github", "js"],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/appleandbanana",
     livesite: "https://appleandbanana.vercel.app/"
@@ -40,7 +40,7 @@ export let projects = [{
     name: "Crypto News API",
     imgsrc: "/images/CryptoUpdates.png",
     description: "Crypto News Webscraper built using web scraper API made with node and express.js. Gets up to date news from trusted news websites",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+    skills: ["html", "css", 'react', "git", "github", "js"],
     classes: ["react", "node", "html-css"],
     github: "https://github.com/TesleemOla/webscrapper",
     livesite: "http://webscrapperfrontend.vercel.app/"
@@ -50,7 +50,7 @@ export let projects = [{
     name: "Admin Dashboard",
     imgsrc: "/images/admin.png",
     description: "An ecommerce website's admin dashboard",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+    skills: ["html", "css", 'react', "git", "github", "js"],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/admin-dashboard",
     livesite: "http://admin-dashboard-beryl.vercel.app/"
@@ -60,7 +60,7 @@ export let projects = [{
     name: "An Ecommerce product page",
     imgsrc: "/images/sneakers.png",
     description: "An ecommerce product page built with react (Hooks)",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+    skills: ["html", "css", 'react', "git", "github", "js"],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/ecommerce",
     livesite: "https://sneakers-iota.vercel.app/"
@@ -70,7 +70,7 @@ export let projects = [{
     name: "Giftlabs",
     imgsrc: "/images/giftlabs.png",
     description: "A gift shop website build with React, Typescript and Sass",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js", "sass", "typescript"],
+    skills: ["html", "css", 'react', "git", "github", "js", "sass", "typescript"],
     classes: ["react", "html-css", "ts"],
     github: "https://github.com/TesleemOla/giftLabs",
     livesite: "https://gift-labs.vercel.app/"
@@ -79,7 +79,7 @@ export let projects = [{
     name: "Country list and information",
     imgsrc: "/images/countries.png",
     description: "A react app built using REST API showing information about each country with a filter function to search",
-    skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js",],
+    skills: ["html", "css", 'react', "git", "github", "js",],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/countrylist",
     livesite: "http://countrylist-rouge.vercel.app/"
@@ -88,7 +88,7 @@ export let projects = [{
     name: "Landing page design",
     imgsrc: "/images/ajocard.png",
     description: "AjoCard Landing page",
-    skills: ["html5", "css3-alt", "git-alt", "github", "js"],
+    skills: ["html", "css", "git", "github", "js"],
     classes: ["html-css"],
     github: "https://github.com/TesleemOla/ajocard",
     livesite: "https://TesleemOla.github.io/ajocard/"
