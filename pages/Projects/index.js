@@ -2,7 +2,8 @@ import { useState, useEffect} from "react"
 import Image  from "next/image"
 import { projects } from "./data";
 import styles from "./projects.module.css"
-import Skills from "../../Components/Skills";
+import { FaGithub } from "react-icons/fa";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 const Projects=()=>{
     const [fadeIn, setFadeIn] = useState(false)
@@ -12,7 +13,7 @@ const Projects=()=>{
     },[])
     const anims=(i) => {
        return { transform: !fadeIn ? 'scale(0)': 'scale(1)',
-                transition: `ease-in ${i+1}s`
+                transition: `ease-in ${i*.5}s`
     }
     }
    
@@ -31,8 +32,10 @@ const Projects=()=>{
                             <p>{description}</p>
                             <div className={styles.btns}>
                                 <button className={styles.btngt}>
+                                    <FaGithub />
                                     <a href={github} target="_blank" rel="noopener noreferrer">Github</a></button>
                                 <button className={styles.btndm}>
+                                    <RiExternalLinkLine />
                                     <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                             </div>
                             <div>

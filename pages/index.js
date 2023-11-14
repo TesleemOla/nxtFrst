@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
-// import Image from "next/Image"
+import Link from "next/link"
 import styles from "../styles/Home.module.css"
-
+import { FaLinkedinIn, FaCodepen, FaGithub } from "react-icons/fa";
 
 const Home = () => {
 
@@ -18,7 +18,19 @@ const Home = () => {
             <button className={styles.contactbtn} onClick={()=> router.push("/Contact") }>Contact me</button>
           </div>
           {/* <Image src="/images/profile.jpg" width= {300} height={300} style={{borderRadius: `30px 50%`}} alt="home profile" /> */}
-        </section>  
+        <div className={styles.iconssection}>
+          <Link href="https://github.com/Tesleemola">  
+          <FaLinkedinIn className={styles.linkedin} /> 
+          </Link>
+          <Link href="https://codepen.io/tesleemcodes/">
+              <FaCodepen className={styles.codepen} /> 
+           </Link>
+          <Link href="https://www.linkedin.com/in/tesleemoladepo/">
+             <FaGithub className={styles.codepen} />
+          </Link>
+        </div>  
+        </section>
+        
 
       </main>
 

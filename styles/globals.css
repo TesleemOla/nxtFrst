@@ -7,7 +7,7 @@ body {
 }
 :root{
   --black: linear-gradient(to bottom right, #996633, #666633);
-  --lightblack: rgba(0, 0, 0, 0.05);
+  --lightblack: rgba(0, 0, 0, 3);
   --blue: #6666ef;
   --prp: #9358F7;
   --white:  #ccccff;

@@ -33,16 +33,20 @@
 }
 .btngt, .btndm{
     border-radius: 4px;
-    background:var(--prp);
+    background:var(--lightblack);
     padding: 0.5em 1em;
     color: #fff;
     margin: 0 1em;
     cursor: pointer;
     border: 0;
 }
-
+.btngt svg,
+.btndm svg{
+    margin-right: 5px;
+}
 .btndm{
-    background: var(--red);
+    background: var(--fontonly);
+    
 }
 
 @media screen and (min-width: 768px){

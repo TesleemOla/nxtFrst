@@ -8,6 +8,14 @@ export let projects = [{
     github:"https://github.com/TesleemOla/GetLinked",
     livesite: "https://get-linked-alpha.vercel.app/"
 },{
+    name: "Lil5ve music website homepage",
+    imgsrc:"/images/lil5ive.png",
+    description: "Homepage made with React.js",
+    skills: ["html", "css", "bootstrap", 'react', "git", "github", "node", "js"],
+    classes: ["react", 'html-css'],
+    github: "https://github.com/TesleemOla/Lil5ive",
+    livesite: "https://lil5ive.vercel.app/"
+},{
     name: "Ecommerce website",
     imgsrc: "/images/ecommerce.png",
     description: "A full ecommerce website made with fakestore api, complete with flutterwave card checkout",

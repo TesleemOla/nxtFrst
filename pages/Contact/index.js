@@ -27,9 +27,10 @@ const Contact = () => {
     },
   });
   return (
-      <>
-          <h1>Contact</h1>
+
+          
           <section>
+        <h1>Contact</h1>
             <form onSubmit={formik.handleSubmit}>
               <div className={styles.lbcontainer}>
                 <label>Email</label> 
@@ -45,15 +46,15 @@ const Contact = () => {
                     </textarea>
               </div>
               
-              <button type="submit">
+              <button type="submit" className={styles.btncnt}>
                 Submit
               </button>
               </form>
-          </section>
+          
           <button><LinkedinOutlined /> </button>
       <button><CodepenOutlined /></button>
       <button><GithubOutlined /></button>
-</>
+    </section>
   )
 }
 

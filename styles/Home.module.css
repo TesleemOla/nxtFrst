@@ -1,9 +1,9 @@
 
 .hirebtn, .contactbtn{
   background: transparent;
-  box-shadow: inset var(--fontonly) 3px 3px 0 0;
+  box-shadow: inset var(--blue) 3px 3px 0 0;
   border-radius: 8px;
-  border: 1px solid var(--fontonly);
+  border: 1px solid var(--blue);
   cursor: pointer;
   color: var(--font-only);
   font-family: Inter;
@@ -20,4 +20,24 @@
     transform: scale(0.8)
   }
 
+  .iconssection{
+    margin-top: 5px;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: center
+  }
+.linkedin{
+  color: blue;
+}
+.linkedin:hover{
+    transform: scale(1.2)
+  }
+
+.codepen{
+  color: var(--lightblack);
+}
+.codepen:hover{
+    transform: scale(1.2)
+  }
 
