@@ -10,7 +10,7 @@ const Nav = () => {
 
 
   const [isOpen, setIsOpen] = useState(false)
-  const [links, setLinks] = useState(["Home", "About", "Projects", "Contact"])
+  const [links, setLinks] = useState(["Home", "About", "Projects"])
 
   const dropdown ={
     width: isOpen?'70vw': "0",
