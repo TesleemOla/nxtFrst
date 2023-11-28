@@ -1,5 +1,13 @@
 
 export let projects = [{
+    name: "Shopify Profile",
+    imgsrc: "/images/levelup.png",
+    description: "Shopify Profile setup",
+    skills: ["html", "css", "js"],
+    classes: [ "html-css"],
+    github: "https://github.com/TesleemOla/levelup",
+    livesite: "https://levelup-ashy.vercel.app/"
+},{
     name: "GetLinked",
     imgsrc:"/images/getlinked-ai.png",
     description: "GetLinked Hackathon website",

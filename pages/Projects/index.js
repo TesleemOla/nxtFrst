@@ -1,6 +1,6 @@
 import { useState, useEffect} from "react"
 import Image  from "next/image"
-import { projects } from "./data";
+import { projects } from "../../Components/data/data";
 import styles from "./projects.module.css"
 import { FaGithub } from "react-icons/fa";
 import { RiExternalLinkLine } from "react-icons/ri";
@@ -39,7 +39,7 @@ const Projects=()=>{
                                     <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                             </div>
                             <div>
-                                {skills.map((item, i) => <span key={i}>{` ${item} `}</span>)}
+                                <span style={{fontWeight: "500"}}>Skills used:</span> {skills.map((item, i) => <span key={i}>{` ${item} `}</span>)}
                             </div>
                         </div>
                     )
