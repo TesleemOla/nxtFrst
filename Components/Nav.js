@@ -14,6 +14,7 @@ const Nav = () => {
 
   const dropdown ={
     width: isOpen?'70vw': "0",
+    height: isOpen? '60vh': "0",
     transition: 'ease-in-out 0.5s',
     background: 'var(--black)',
     color: 'var(--white)',

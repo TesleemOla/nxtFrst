@@ -15,6 +15,7 @@ const About = () => {
     return {
       // opacity: appear? 1: 0,
       // background: appear? "white": "black",
+      
       marginLeft: appear? 0: "-300%",
       transition: `ease-in ${i+2}s`
     }
@@ -43,12 +44,12 @@ const About = () => {
           </p>
           <p>
             {
-              skills.map((skill,i)=> <Skills key={i} item={skill} styler={apearanim(i)} />)
+              skills.map((skill,i)=> <Skills key={i} item={skill} styler={apearanim(i)}  />)
             }
           </p>
         </section>
         <section className={styles.abouttxt}>
-          <p >Experience</p>
+          <p className={styles.exp}>Experience</p>
           <div>
             <p>IKOOK UK</p>
             <p>London, UK (Remote)</p>

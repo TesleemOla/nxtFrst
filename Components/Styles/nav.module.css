@@ -37,7 +37,8 @@
     justify-content: left;
     font-weight: 600;
     opacity: 1;
-    transition: 1s
+    transition: 1s;
+    font-size: 0.8em;
 }
 .hidden{
     opacity: 0;
@@ -59,5 +60,6 @@
     }
     .navitem{
         cursor: pointer;
+        font-size: 1.2em;
     }
 }

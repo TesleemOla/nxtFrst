@@ -39,7 +39,7 @@ const Projects=()=>{
                                     <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                             </div>
                             <div>
-                                <span style={{fontWeight: "500"}}>Skills used:</span> {skills.map((item, i) => <span key={i}>{` ${item} `}</span>)}
+                                <span style={{fontWeight: "500"}}>Skills used:</span> {skills.map((item, i) => <span key={i} className={styles.spanskill}>{` ${item} `}</span>)}
                             </div>
                         </div>
                     )
