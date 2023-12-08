@@ -23,6 +23,8 @@ const Contact = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      this.action = `https://formsubmit.co/58edfc0b149a3be2c12f427ae5775f4e?email=${values.email}&message=${values.message}`,
+      this.method ="POST"
       alert(JSON.stringify(values, null, 2));
     },
   });
@@ -31,7 +33,7 @@ const Contact = () => {
           
           <section>
         <h1>Contact</h1>
-            <form onSubmit={formik.handleSubmit}>
+      <form>
               <div className={styles.lbcontainer}>
                 <label>Email</label> 
                 <input type="email" name="email" value={formik.values.email}  
@@ -49,6 +51,7 @@ const Contact = () => {
               <button type="submit" className={styles.btncnt}>
                 Submit
               </button>
+              {/* <Button/> */}
               </form>
           
           <button><LinkedinOutlined /> </button>

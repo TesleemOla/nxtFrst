@@ -20,24 +20,4 @@
     transform: scale(0.8)
   }
 
-  .iconssection{
-    margin-top: 5px;
-    display: flex;
-    gap: 3em;
-    align-items: center;
-    justify-content: center
-  }
-.linkedin{
-  color: blue;
-}
-.linkedin:hover{
-    transform: scale(1.2)
-  }
-
-.codepen{
-  color: var(--lightblack);
-}
-.codepen:hover{
-    transform: scale(1.2)
-  }
 

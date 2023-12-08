@@ -7,14 +7,14 @@ body {
 }
 :root{
   --black: #000;
-  --lightblack: rgba(0, 0, 0, 3);
+  --lightblack: rgba(0, 0, 0, .12);
   --blue: #6666ef;
   --prp: #9358F7;
   --white:  #ccccff;
   --red: red;
   --fontonly: #0040ff;
-
 }
+
 a {
   color: inherit;
   text-decoration: none;

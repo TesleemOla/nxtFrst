@@ -31,16 +31,18 @@ const Projects=()=>{
                             <p className={styles.name}>{name}</p>
                             <p>{description}</p>
                             <div className={styles.btns}>
+                                <div>
                                 <button className={styles.btngt}>
                                     <FaGithub />
                                     <a href={github} target="_blank" rel="noopener noreferrer">Github</a></button>
                                 <button className={styles.btndm}>
                                     <RiExternalLinkLine />
                                     <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
+                                
+                                    <span style={{ fontWeight: "500" }}>Skills used:</span> {skills.map((item, i) => <span key={i} className={styles.spanskill}>{` ${item} `}</span>)}
+                                </div>
                             </div>
-                            <div>
-                                <span style={{fontWeight: "500"}}>Skills used:</span> {skills.map((item, i) => <span key={i} className={styles.spanskill}>{` ${item} `}</span>)}
-                            </div>
+                           
                         </div>
                     )
                 })

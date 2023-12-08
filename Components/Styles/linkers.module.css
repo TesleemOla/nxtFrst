@@ -1,0 +1,30 @@
+  .iconssection{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    gap: 3em;
+    position: fixed;
+    right: 0;
+    bottom: 1em;
+    background: var(--white);
+    padding: 0.2em;
+    border-radius: 5px 0 0 5px;
+  }
+.linkedin{
+  color: blue;
+}
+
+
+.codepen{
+  color: var(--black);
+}
+.linkedin:hover,
+.codepen:hover{
+    transform: scale(1.2)
+  }
+
+  .linkedin:hover,
+  .codepen:hover{
+    cursor: pointer;
+  }

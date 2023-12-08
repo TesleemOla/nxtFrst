@@ -33,8 +33,7 @@
 }
 .btngt, .btndm{
     border-radius: 4px;
-    background:var(--lightblack);
-    padding: 0.5em 1em;
+    background:var(--black);
     color: #fff;
     margin: 0 1em;
     cursor: pointer;
@@ -45,7 +44,7 @@
     margin-right: 5px;
 }
 .btndm{
-    background: var(--fontonly);
+    background: var(--red);
     
 }
 .spanskill{
@@ -61,11 +60,45 @@
     }
     .singleproject{
         width: 20em;
-            
+        position: relative;
     }
-    .singleproject:hover{
+    .btns{
+        position: absolute;
+        top: 1.2em;
+        right: 1.2em;
+        background: var(--lightblack);
+        width: 90%;
+        height: 55%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(90deg)
+    }
+
+    @keyframes animimage{
+        0%{
+            transform: rotateY(0deg)
+        }
+        100%{
+            transform: rotateY(90deg)
+        }
+    }
+    .singleproject:hover img{
         cursor: pointer;
-        
-        transition: ease-in-out 0.4s
+        animation: animimage 0.3s forwards ease-out;
+    }
+    .singleproject:hover .btns{
+        animation: animimage 0.3s forwards ease-in reverse;
+        transition: 1s ease-in;
+        animation-delay: 0.4s;
+    }
+    .btngt{
+        background: var(--prp);
+        padding: 0.5em 1em;
+    }
+    .btndm{
+        background: var(--red);
+        padding: 0.5em 1em;
     }
 }
