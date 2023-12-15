@@ -34,7 +34,7 @@ const About = () => {
             I currently study at AltSchool Africa School of Software Engineering, as part of the Class of 2021. I am always open to collaborating on open-source projects, participating in hackathons, and exploring internships and entry-level opportunities.
           </p>
           <p>
-            My job interests include roles as a Software Engineer, Front Engineer, UI Engineer, or Backend development (Intern or Junior level)1. If you’d like to get in touch, feel free to contact me via 
+            My job interests include roles as a Software Engineer, Front Engineer, UI Engineer, or Backend development (Intern or Junior level). If you’d like to get in touch, feel free to contact me via 
             <Link href="mailto:oladepotesleem5@gmail.com">email</Link> or 
           <Link href="https://www.linkedin.com/in/tesleemoladepo/">LinkedIn</Link>.
 
