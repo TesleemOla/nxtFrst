@@ -1,3 +1,9 @@
+.contactsect{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .lbcontainer{
     display: flex;
     flex-direction: column;
@@ -24,5 +30,11 @@
 
 }
 .btncnt{
-    
+    padding: 0.6em 1em;
+    background-color: var(--prp);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }

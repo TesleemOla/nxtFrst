@@ -17,7 +17,7 @@ const About = () => {
       // background: appear? "white": "black",
       
       marginLeft: appear? 0: "-300%",
-      transition: `ease-in ${i+2}s`
+      transition: `ease-in ${i/5}s`
     }
   }
   return (

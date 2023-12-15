@@ -1,11 +1,11 @@
 
 .hirebtn, .contactbtn{
-  background: transparent;
-  box-shadow: inset var(--blue) 3px 3px 0 0;
+  background: var(--black);
+  box-shadow: inset var(--red) 3px 3px 0 0;
   border-radius: 8px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--red);
   cursor: pointer;
-  color: var(--font-only);
+  color: var(--white);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -19,5 +19,26 @@
  .contactbtn:hover {
     transform: scale(0.8)
   }
-
+     .hpgsection {
+       display: flex;
+       justify-content: space-around;
+       color: var(---white);
+       height: 100%;
+       padding-top: 2em;
+     }
+  
+     .hpgsection div {
+       color: var(--white);
+       font-size: 1.5em;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+     }
+@media screen and (min-width: 768px){
+  .left-al div{
+    margin-left: 1em;
+  }
+ 
+}
 
