@@ -10,6 +10,11 @@
     font-size: 1.5em;
     font-weight: 700;
 }
+.skpara{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .skills{
     margin: 1em 0.5em;
 }

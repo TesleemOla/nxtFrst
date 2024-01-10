@@ -32,13 +32,19 @@
     font-size: 0.9em;
     font-weight: 800;
 }
+.btndv{
+    display: flex;
+}
 .btngt, .btndm{
     border-radius: 4px;
-    background:var(--black);
+    background:var(--blue);
     color: #fff;
     margin: 0 1em;
+    padding: 0.8em 0.5em;
     cursor: pointer;
     border: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .btngt svg,
 .btndm svg{
@@ -73,6 +79,7 @@
         height: 55%;
         border-radius: 5px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         transform: rotateY(90deg)
@@ -103,4 +110,8 @@
         background: var(--red);
         padding: 0.5em 1em;
     }
+        .btngt,
+        .btndm {
+            padding: 1em;
+        }
 }

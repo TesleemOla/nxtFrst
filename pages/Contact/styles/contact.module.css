@@ -1,40 +1,14 @@
-.contactsect{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.lbcontainer{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
-.cninp{
-    padding: 0.5em 1em;
-
-}
-.cntxtar{
-    width: 100%;
-    padding: 0.5em 1em;
-    height: 40vh;
-}
-
-.cnerr::placeholder{
-    color: red;
-}
-
-.sub-btn{
-    background-color: rgba(0,0,0,0.8);
-    color:#fff
-
-}
-.btncnt{
-    padding: 0.6em 1em;
-    background-color: var(--prp);
+.contactform{
     color: var(--white);
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 2em auto;
+}
+
+.contactform form{
+    
+    border: 1px solid var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }

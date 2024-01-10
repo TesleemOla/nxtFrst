@@ -26,7 +26,7 @@ const About = () => {
         
         <section className={styles.abouttxt}>
           <p >
-            I am a passionate Software Engineer and Frontend Developer currently seeking roles in frontend development. I have a strong interest in web engineering, JavaScript, and Ecommerce1. I’m currently honing my skills in JavaScript, Reactjs, and Nodejs.
+            I am a passionate Software Engineer and Frontend Developer currently seeking roles in frontend development. I have a strong interest in web engineering, JavaScript, and Ecommerce. I’m currently honing my skills in JavaScript, Reactjs, and Nodejs.
 
             I love sharing knowledge and am a firm believer in the power of documentation. I’ve been creating frontend designs and mockups using React.js, HTML, CSS, plain JavaScript, Node.js, MongoDB, SQL (PostgreSQL), RestFul APIs, and Typescript. You can check out some of my work on my 
           <Link href="https://github.com/TesleemOla">GitHub</Link>.
@@ -44,7 +44,7 @@ const About = () => {
             This experience has enriched my knowledge and skills across diverse fields, making each project a valuable learning opportunity.
 
           </p>
-          <p>
+          <p className={styles.skpara}>
             {
               skills.map((skill,i)=> <Skills key={i} item={skill} styler={apearanim(i)} className={styles.skills}  />)
             }
