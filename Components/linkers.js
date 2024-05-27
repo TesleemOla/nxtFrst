@@ -7,13 +7,14 @@ const Linkers=()=>{
     return (
     <div className={styles.iconssection}>
         <Link href="https://github.com/Tesleemola">
-            <FaLinkedinIn className={styles.linkedin} />
+            
+            <FaGithub className={styles.codepen} />
         </Link>
         <Link href="https://codepen.io/tesleemcodes/">
             <FaCodepen className={styles.codepen} />
         </Link>
         <Link href="https://www.linkedin.com/in/tesleemoladepo/">
-            <FaGithub className={styles.codepen} />
+            <FaLinkedinIn className={styles.linkedin} />
         </Link>
     </div>)
 }
