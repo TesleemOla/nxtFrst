@@ -39,7 +39,9 @@ const Projects=()=>{
                                 <RiExternalLinkLine />
                                 <a href={livesite} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
                             </div>
-                                <span style={{ fontWeight: "500" }}>Skills used:</span> {skills.map((item, i) => <span key={i} className={styles.spanskill}>{` ${item} `}</span>)}
+                                <span style={{ fontWeight: "500" }}>Skills used:</span> {skills.map((item, i) => {
+                                    return <span key={i} className={styles.spanskill}>{` ${item} `}</span>
+                                    })}
                             
                         </div>
                         

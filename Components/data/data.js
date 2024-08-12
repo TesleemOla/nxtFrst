@@ -1,5 +1,6 @@
 
-export let projects = [{
+export let projects = [
+    {
     name: "Shopify Profile",
     imgsrc: "/images/levelup.png",
     description: "Shopify Profile setup",
@@ -33,6 +34,15 @@ export let projects = [{
     livesite: "https://ecommercefsapi.vercel.app/"
 
 },
+    {
+        name: "iKooK Landing Page",
+        imgsrc: "/images/ikook-landing.png",
+        description: "Landing page for a food service website",
+        skills: ["react", "git", "github", "js", "css", "html"],
+        classes: ["react", "html-css"],
+        github: "https://github.com/TesleemOla/ikook-landing",
+        livesite: "https://ikook-landing.vercel.app/"
+    },
 {
     name: "Lendsqr",
     imgsrc: "/images/lendsqr.png",
@@ -66,7 +76,7 @@ export let projects = [{
     name: "Admin Dashboard",
     imgsrc: "/images/admin.png",
     description: "An ecommerce website's admin dashboard",
-    skills: ["html", "css", 'react', "git", "github", "js"],
+    skills: ["html", "css", 'react', "git", "github", "js", "react-redux"],
     classes: ["react", "html-css"],
     github: "https://github.com/TesleemOla/admin-dashboard",
     livesite: "http://admin-dashboard-beryl.vercel.app/"
