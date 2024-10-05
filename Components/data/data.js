@@ -1,6 +1,15 @@
 
 export let projects = [
     {
+        name: 'SleepStiq',
+        imgsrc: "/images/sleepstiq.jpg",
+        description: "Responsive Sleepstiq website",
+        skills: ["nextjs", "tailwindcss","css", "typescript","js"],
+        classes: ["nextjs", "typescript"],
+        github: "https://github.com/TesleemOla/sleepstiq",
+        livesite: "https://sleepstiq-mu.vercel.app/"
+    },
+    {
     name: "Shopify Profile",
     imgsrc: "/images/levelup.png",
     description: "Shopify Profile setup",

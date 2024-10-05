@@ -22,7 +22,7 @@ const Home = () => {
               
               </button>
           </div>
-          <Image src="/images/profile.jpg" width= {500} height={500} style={{opacity: 0.4}}alt="home profile" 
+          <Image src="/images/profile.jpg" width= {500} height={500} alt="home profile" 
           className={styles.myim}/>
 
         </section>

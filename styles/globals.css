@@ -6,11 +6,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 :root{
-  --black: #000;
+  --black: rgba(255, 217, 0, 0.88);
   --lightblack: rgba(0, 0, 0, .12);
   --blue: #6666ef;
   --prp: #9358F7;
-  --white:  #ccccff;
+  --white:  #000;
   --red: red;
   --fontonly: #0040ff;
 }

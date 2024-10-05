@@ -4,7 +4,7 @@ import styles from "./about.module.css"
 import Skills from "../../Components/Skills";
 
 const About = () => {
-  const skills = ["HTML", "CSS", "SASS","Bootstrap","Styled Components", "Material UI", "Javascript", 
+  const skills = ["HTML", "CSS", "SASS","Tailwind CSS","Bootstrap","Styled Components", "Material UI", "Javascript", 
   "React.js", "Node.js", "express.js","SQL", "PostgreSQL"]
   const [appear, setAppear] = useState(false)
 
