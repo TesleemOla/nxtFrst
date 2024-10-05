@@ -40,9 +40,7 @@ const About = () => {
 
 
             As a frontend developer, I take pleasure in crafting digital entities that inhabit the internet, be it websites, applications,
-            or anything in between. My main experience as a frontend developer is working remotely with a startup based in the UK.
-            This experience has enriched my knowledge and skills across diverse fields, making each project a valuable learning opportunity.
-
+            or anything in between. 
           </p>
           <p className={styles.skpara}>
             {
