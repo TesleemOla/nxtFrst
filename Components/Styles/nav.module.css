@@ -2,9 +2,10 @@
     position: sticky;
     top: 0;
     left: 0;
-    background:yellow;
-    border-bottom: 1px solid var(--white);
-    color: var(--white);
+    background:var(--white);
+    /* shadow: */
+    border-bottom: 4px solid var(--lightblack);
+    color: var(--black);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

@@ -2,11 +2,11 @@
     position: absolute;
     top: 0;
     right: 5em;
-    background: var(--white);
-    color: var(--black);
+    background: var(--black);
+    color: var(--white);
 }
 .contactform{
-    color: var(--white);
+    color: var(--black);
     background: transparent
 }
 .contactformhead{
@@ -30,7 +30,7 @@
     border-radius: 8px;
     background: transparent;
     color: #fff;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
 }
 
 .txarea{
@@ -40,15 +40,15 @@
     border-radius: 8px;
     background: transparent;
     color: #fff;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
 }
 
 .submitbtn{
     margin: 1em 0;
     padding: 0.6em 1em;
-    color: var(--white);
+    color: var(--black);
     border-radius: 5px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
 }
 .submitbtn:hover{
     transform: scale(1.2);

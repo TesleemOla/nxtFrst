@@ -30,8 +30,7 @@ const About = () => {
 
             I love sharing knowledge and am a firm believer in the power of documentation. I’ve been creating frontend designs and mockups using React.js, HTML, CSS, plain JavaScript, Node.js, MongoDB, SQL (PostgreSQL), RestFul APIs, and Typescript. You can check out some of my work on my 
           <Link href="https://github.com/TesleemOla">GitHub</Link>.
-
-            I currently study at AltSchool Africa School of Software Engineering, as part of the Class of 2021. I am always open to collaborating on open-source projects, participating in hackathons, and exploring internships and entry-level opportunities.
+          I am always open to collaborating on open-source projects, participating in hackathons, and exploring internships and entry-level opportunities.
           </p>
           <p>
             My job interests include roles as a Software Engineer, Front Engineer, UI Engineer, or Backend development (Intern or Junior level). If you’d like to get in touch, feel free to contact me via 
@@ -51,7 +50,7 @@ const About = () => {
         <section className={styles.abouttxt}>
           <p className={styles.exp}>Experience</p>
           <div>
-            <p>IKOOK UK</p>
+            <p>IKOOK</p>
             <p>London, UK (Remote)</p>
             <div>
             <p>Frontend Intern <span>Oct 2022 - February 2023</span></p>

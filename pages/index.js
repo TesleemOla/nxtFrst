@@ -12,7 +12,7 @@ const Home = () => {
       <main className="pg-bg">
         <section className={styles.hpgsection}>
           <div>
-            <h1> Hello, {`I'm`} Tesleem</h1>
+            <h1> Hi, {`I'm`} Tesleem</h1>
             <h5>A front-End Developer</h5>
             <button className={styles.hirebtn}> 
             <Link href="https://drive.google.com/file/d/1pkEifw-xr_JRE4LTlUT6emjQRoUQ1vge/view?usp=sharing"
