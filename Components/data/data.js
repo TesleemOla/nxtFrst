@@ -4,7 +4,7 @@ export let projects = [
         name: 'SleepStiq',
         imgsrc: "/images/sleepstiq.jpg",
         description: "Responsive Sleepstiq website",
-        skills: ["nextjs", "tailwindcss","css", "typescript","js"],
+        skills: ["nextjs", "tailwindcss", "typescript","js"],
         classes: ["nextjs", "typescript"],
         github: "https://github.com/TesleemOla/sleepstiq",
         livesite: "https://sleepstiq-mu.vercel.app/"
@@ -17,6 +17,14 @@ export let projects = [
     classes: [ "html-css"],
     github: "https://github.com/TesleemOla/levelup",
     livesite: "https://levelup-ashy.vercel.app/"
+},{
+    name: "Pharmacy API",
+    imgsrc:"/images/medpharm.jpeg",
+    description: "Inventory management backend api for a pharmaceutical company",
+    skills: ["nodejs", "express", "jwt", "mongodb"],
+    classes: ["nodejs", "express", "jwt", "mongodb"],
+    github: "https://github.com/TesleemOla/medpharm-be",
+    livesite: "https://documenter.getpostman.com/view/16563911/2s9YeN1UAk"
 },{
     name: "GetLinked",
     imgsrc:"/images/getlinked-ai.png",
