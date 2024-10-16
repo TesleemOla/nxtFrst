@@ -28,8 +28,9 @@
        padding-top: 2em;
      }
   .myim{
-    border: 2px solid var(--red);
     border-radius: 50%;
+    /* width: minmax(30vw,60vw);
+    height: minmax(30vw,50vw); */
   }
      .hpgsection div {
        color: var(--black);
