@@ -21,7 +21,7 @@ const About = () => {
     }
   }
   return (
-    <main className={styles.aboutpg}>
+    <main className={styles.aboutpg} id="about">
         <h1>About Me</h1>
         
         <section className={styles.abouttxt}>

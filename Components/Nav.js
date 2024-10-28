@@ -44,7 +44,7 @@ const Nav = () => {
             {
               links.map((item,i)=> {
 
-                return <Link key ={i} href={item === "Home"? "/": `/${item}` } >
+                return <Link key ={i} href={item === "Home"? "/": item === "About"? "/#about": `/${item}` } >
                   
                   <div onClick={() => setIsOpen(!isOpen)} className={isOpen?styles.navitem: styles.hidden}>
                     {item}
@@ -62,7 +62,7 @@ const Nav = () => {
         {
           links.map((item, i) => {
             
-            return <Link key={i} href={item === "Home" ? "/" : `/${item}`}>
+            return <Link key={i} href={item === "Home" ? "/" : item === "About"? "/#about":  `/${item}`}>
               <div onClick={() => setIsOpen(!isOpen)} className={styles.navitem}>
                 {item}
               </div>

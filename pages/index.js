@@ -1,13 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
+import About from "../Components/About"
 
 
 const Home = () => {
 
-
   return (
-//  use clouds background with animation ?
+
        
       <main className="pg-bg">
         <section className={styles.hpgsection}>
@@ -26,8 +26,10 @@ const Home = () => {
           className={styles.myim}/>
 
         </section>
-        
+      
+        <About />
 
+     
       </main>
 
        

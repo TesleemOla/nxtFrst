@@ -28,7 +28,7 @@ const Contact = () => {
   }
   return (
 
-    <main className={styles.contactform}>  
+    <section className={styles.contactform}>  
     {messageStatus && <p className={styles.status}>Message sent</p>}
     <h2 className={styles.contactformhead}>Contact Me</h2>
       <form onSubmit={submitForm} ref={formdetails}>
@@ -41,7 +41,7 @@ const Contact = () => {
         <textarea name="message" className={styles.txarea} minLength={10}></textarea>
         <input type="submit" value="Send" className={styles.submitbtn}/>
       </form>
-    </main>
+    </section>
   )
 }
 

@@ -1,6 +1,15 @@
 
 export let projects = [
     {
+        name: "Event Management",
+        imgsrc: "/images/eventmgt.jpeg",
+        description: "Event Management Website",
+        skills: ["nextjs", "prisma ORM", "supabase", "typescript", "tailwind css"],
+        classes: ["nextjs", "typescript"],
+        github: "https://github.com/TesleemOla/Event-Management",
+        livesite: "https://eventmgt-theta.vercel.app/"
+    },
+    {
         name: 'SleepStiq',
         imgsrc: "/images/sleepstiq.jpg",
         description: "Responsive Sleepstiq website",
