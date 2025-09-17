@@ -43,13 +43,12 @@ export function Projects() {
       category: "Frontend",
       year: "2025",
       status: "Live",
-
     },
     {
       title: "Polyglot learning platform",
       description:
         "An AI assisted language learning platform built with Gemini AI SDK",
-      image: "/modern-chat-app.png",
+      image: "/polyglot.jpg",
       technologies: [
         "Next.js",
         "Node.js",
@@ -60,11 +59,10 @@ export function Projects() {
       ],
       liveUrl: "https://polyglot-journey.vercel.app/",
       githubUrl: "#",
-      featured: false,
+      featured: true,
       category: "Full-Stack",
       year: "2025",
       status: "Live",
-
     },
     {
       title: "The bass Product Page",
@@ -77,22 +75,70 @@ export function Projects() {
       featured: false,
       category: "Frontend",
       year: "2024",
-      status: "Live"
+      status: "Live",
     },
     {
       title: "Polyglot learner API",
       description:
         "Scalable API gateway with rate limiting, authentication,using GEMINI AI SDK to help users learn new languages.",
       image: "/api-gateway-architecture.png",
-      technologies: ["Node.js", "Express", "Render", "MongoDB"],
-      liveUrl: "#",
+      technologies: [
+        "Node.js",
+        "Express",
+        "Render",
+        "MongoDB",
+        "Swagger UI",
+        "Gemini AI SDK",
+      ],
+      liveUrl: "https://learnpath-gemini.onrender.com/api/docs/",
       githubUrl: "https://github.com/TesleemOla/LearnPath-Gemini",
       featured: false,
       category: "Backend",
       year: "2025",
-      status: "Live"
-
-    }
+      status: "Live",
+    },
+    {
+      title: "Sleepstiq Ecommerce",
+      description: "Client side for an ecommerce website.",
+      image: "/api-gateway-architecture.png",
+      technologies: ["Next.js", "Tailwind css", "Git", "Github"],
+      liveUrl: "https://sleepstiq-mu.vercel.app/",
+      githubUrl: "https://github.com/TesleemOla/sleepstiq",
+      featured: false,
+      category: "Frontend",
+      year: "2024",
+      status: "Live",
+    },
+    {
+      title: "Lil5ive",
+      description: "A frontend landing page for a music promotion company",
+      image: "/lil5ve.jpg",
+      technologies: ["React.js", "CSS", "Git", "Github"],
+      liveUrl: "https://lil5ive.vercel.app/",
+      githubUrl: "https://github.com/TesleemOla/Lil5ive",
+      featured: false,
+      category: "Frontend",
+      year: "2023",
+    },
+    {
+      title: "Ecommerce",
+      description: "Ecommerce website made with FakeStore API and Flutterwave secure checkout",
+      image: "/fsapi.jpg",
+      technologies: [
+        "React.js",
+        "Bootstrap",
+        "CSS",
+        "Fake store API",
+        "Flutterwave secure Checkout",
+        "Git",
+        "Github",
+      ],
+      liveUrl: "https://ecommercefsapi.vercel.app/",
+      githubUrl: "https://github.com/TesleemOla/ecommercefsapi",
+      featured: false,
+      category: "Frontend",
+      year: "2022",
+    },
   ];
 
   const categories = ["All", "Full-Stack", "Frontend", "Backend", "SaaS"]
