@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { ExternalLink, Github, Search, Filter, Star, Calendar, Code2, Grid, List, Eye, TrendingUp } from "lucide-react"
 
+
 export function Projects() {
   const [isVisible, setIsVisible] = useState(false)
   const [visibleProjects, setVisibleProjects] = useState<number[]>([])
@@ -34,15 +35,27 @@ export function Projects() {
     {
       title: "Scene Apps Website",
       description:
-        "Analytics dashboard for social media management with data visualization, scheduling features, and multi-platform integration.",
+        "Main website for Scene Apps mobile; a full feature social media platform.",
       image: "/scene-apps.jpg",
-      technologies: ["React", "Express", "MongoDB", "D3.js", "OAuth"],
+      technologies: ["React", "Tailwind CSS", "Replit",],
       liveUrl: "https://sceneapps.com",
       githubUrl: "https://github.com/TesleemOla/SceneApps",
       featured: false,
       category: "Frontend",
       year: "2025",
       status: "Live",
+    },
+    {
+    title: "Staff management system",
+    description: "A staff management system for employees data and arrival times logging.",
+    image: "/staff-mgt.jpg",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Render", "Bolt.new"],
+    liveUrl: "mstaff-mgt.vercel.app",
+    githubUrl: "https://github.com/TesleemOla/mstaff-mgt-be",
+    featured: false,
+    category: "Full-Stack",
+    year: "2025",
+    status: "Live"
     },
     {
       title: "Polyglot learning platform",
@@ -52,6 +65,7 @@ export function Projects() {
       technologies: [
         "Next.js",
         "Node.js",
+        "React-query",
         "Express",
         "MongoDB",
         "Gemini AI",
@@ -193,6 +207,7 @@ export function Projects() {
       })
     }, 100)
   }, [selectedFilter, searchTerm])
+
 
   return (
     <section

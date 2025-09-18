@@ -49,7 +49,7 @@ export function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative text-sm font-medium transition-all duration-300 hover:text-pink-400 hover:scale-105 ${
+                className={`relative text-sm font-medium transition-all duration-300  hover:scale-105 ${
                   isActive(item.href) ? "text-pink-400" : "text-slate-200"
                 }`}
               >
