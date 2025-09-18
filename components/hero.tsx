@@ -93,7 +93,6 @@ export function Hero() {
             >
               A FullStack{" "}
               <span className="text-[color:var(--color-warm-orange)] font-semibold relative">
-                MERN
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[color:var(--color-warm-orange)] animate-pulse" />
               </span>{" "}
               Developer
