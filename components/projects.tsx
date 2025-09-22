@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { ExternalLink, Github, Search, Filter, Star, Calendar, Code2, Grid, List, Eye, TrendingUp } from "lucide-react"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 
 export function Projects() {
@@ -17,6 +18,7 @@ export function Projects() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
   const sectionRef = useRef<HTMLElement>(null)
   const projectsRef = useRef<HTMLDivElement>(null)
+  const checkMobile = useIsMobile()
 
   const projects = [
     {
@@ -208,7 +210,11 @@ export function Projects() {
     }, 100)
   }, [selectedFilter, searchTerm])
 
-
+  useEffect(()=>{
+    if (checkMobile){
+      setViewMode("list")
+    }
+  },[checkMobile])
   return (
     <section
       ref={sectionRef}
