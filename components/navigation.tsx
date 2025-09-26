@@ -50,7 +50,7 @@ export function Navigation() {
                 key={item.name}
                 href={item.href}
                 className={`relative text-sm font-medium transition-all duration-300  hover:scale-105 ${
-                  isActive(item.href) ? "text-pink-400" : "text-slate-200"
+                  isActive(item.href) ? "text-pink-400" : "text-muted-foreground"
                 }`}
               >
                 {item.name}
@@ -64,7 +64,7 @@ export function Navigation() {
 
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button className="bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25 animate-glow">
+              <Button className="bg-foreground text-background border-2 border-transparent hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-300 hover:scale-105">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
@@ -114,7 +114,7 @@ export function Navigation() {
             ))}
             <div className="pt-2">
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button className="w-full bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 text-white shadow-lg hover:shadow-pink-500/25">
+                <Button className="w-full bg-foreground text-background border-2 border-transparent hover:bg-background hover:text-foreground hover:border-foreground">
                   <Sparkles className="w-4 h-4 mr-2" />
                   Get In Touch
                 </Button>

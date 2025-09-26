@@ -105,7 +105,7 @@ export function Contact() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-gradient-to-br from-background via-muted/5 to-background relative overflow-hidden"
+      className="py-20 bg-background relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
@@ -324,7 +324,7 @@ export function Contact() {
                   >
                     <Button
                       type="submit"
-                      className="w-full bg--[color:var(--color-navy)] text-white border-2 cursor-pointer hover:bg-[color:var(--color-navy)]/90 transition-all duration-300 hover:scale-105 group"
+                      className="w-full bg-foreground text-background border-2 border-transparent cursor-pointer hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-300 hover:scale-105 group"
                       size="lg"
                       disabled={isSubmitting}
                     >

@@ -112,16 +112,16 @@ export function About() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-background to-background relative overflow-hidden"
     >
-      {/* Background Elements */}
+      {/* Background Elements
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[color:var(--color-electric-blue)]/10 rounded-full blur-3xl animate-pulse" />
         <div
           className="absolute bottom-1/3 right-1/3 w-24 h-24 bg-[color:var(--color-warm-orange)]/10 rounded-full blur-2xl animate-pulse"
           style={{ animationDelay: "1s" }}
         />
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Header */}
@@ -139,8 +139,8 @@ export function About() {
             }`}
             style={{ transitionDelay: "200ms" }}
           >
-            I'm a passionate, dedicated, and detail-oriented FullStack MERN developer with over
-             4 years of experience building robust, scalable web
+            I'm a passionate, dedicated, and detail-oriented FullStack developer with over
+             3 years of experience building robust, scalable and responsive web
             applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
           </p>
         </div>

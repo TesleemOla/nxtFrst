@@ -148,7 +148,7 @@ export function Hero() {
             <Link href="/projects">
               <Button
                 size="lg"
-                className="cursor-pointer bg-[color:var(--color-navy)] hover:bg-[color:var(--color-navy)]/90 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+                className="bg-foreground text-background border-2 border-transparent hover:bg-background hover:text-foreground hover:border-foreground cursor-pointer duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <span className="group-hover:translate-x-1 transition-transform duration-300">
                   View My Work
@@ -157,9 +157,9 @@ export function Hero() {
             </Link>
             <Link href="/contact">
               <Button
-                size="lg"
+                size="lg" 
                 variant="outline"
-                className="border-[color:var(--color-electric-blue)] text-[color:var(--color-electric-blue)] hover:bg-[color:var(--color-electric-blue)] hover:text-white transition-all duration-300 hover:scale-105 bg-transparent"
+                className="border-[color:var(--color-electric-blue)] text-[color:var(--color-electric-blue)]  hover:scale-105 bg-transparent"
               >
                 Let's Talk
               </Button>
@@ -168,7 +168,7 @@ export function Hero() {
 
           {/* Social Links */}
           <div
-            className={`flex items-center justify-center gap-6 pt-8 transition-all duration-1000 ease-out ${
+            className={`flex items-center justify-center gap-6 pt-8 my-5 transition-all duration-1000 ease-out ${
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
             style={{ transitionDelay: "1400ms" }}
@@ -189,7 +189,7 @@ export function Hero() {
               <a
                 key={social.label}
                 href={social.href}
-                className={`group p-3 rounded-full ${social.label === "GitHub"? "bg-black": "bg-blue-500 text-white"} text-muted-foreground hover:text-[color:var(--color-electric-blue)] hover:bg-[color:var(--color-electric-blue)]/10 transition-all duration-300 hover:scale-110`}
+                className={`group p-3 rounded-full ${social.label === "GitHub"? "text-white bg-black": social.label === "LinkedIn" ? "text-white bg-blue-800 rounded-none": "bg-red-600 text-white"} hover:text-[color:var(--color-electric-blue)] hover:bg-[color:var(--color-electric-blue)]/10 transition-all duration-300 hover:scale-110`}
                 aria-label={social.label}
               >
                 <social.icon

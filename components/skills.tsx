@@ -118,7 +118,7 @@ export function Skills() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-gradient-to-br from-background via-muted/5 to-background relative overflow-hidden"
+      className="py-20 bg-background relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
@@ -228,7 +228,7 @@ export function Skills() {
               {learningSkills.map((skill, index) => (
                 <div
                   key={skill.name}
-                  className={`p-4 rounded-lg bg-card/30 hover:bg-card/50 transition-all duration-300 hover:scale-105 group ${
+                  className={`p-4 rounded-lg bg-card/30 hover:bg-card/90 transition-all duration-300 hover:scale-105 group ${
                     isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
                   }`}
                   style={{ transitionDelay: `${1000 + index * 100}ms` }}
