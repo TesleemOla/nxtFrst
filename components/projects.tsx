@@ -288,7 +288,7 @@ export function Projects() {
                   onClick={() => setSelectedFilter(category)}
                   className={`transition-all duration-300 h-12 px-6 ${
                     selectedFilter === category 
-                      ? "bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 text-foreground border-0 shadow-lg"
+                      ? "bg-foreground text-background hover:to-violet-600 border-0 shadow-lg"
                       : "glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
                   }`}
                 >
@@ -333,7 +333,7 @@ export function Projects() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={`featured-${index}`}
-                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[1.02] glass-effect border-white/20 ${
+                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[0.9] glass-effect border-white/20 ${
                   visibleProjects.includes(index) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
@@ -376,7 +376,7 @@ export function Projects() {
                   <div className="p-10 lg:p-16 flex flex-col justify-center">
                     <div className="mb-6">
                       <div className="flex items-center gap-3 mb-4">
-                        <Badge className="bg-gradient-to-r from-pink-500 to-rose-500 text-foreground border-0 px-4 py-2 text-sm shadow-lg">
+                        <Badge className="bg-foreground text-background border-0 px-4 py-2 text-sm shadow-lg">
                           <Star className="w-4 h-4 mr-2" />
                           Featured Project
                         </Badge>
@@ -394,7 +394,7 @@ export function Projects() {
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
                           key={tech}
-                          className={`text-sm transition-all duration-300 hover:scale-110 cursor-pointer glass-effect border-foreground/20 text-foreground hover:border-pink-400 hover:text-pink-400 ${
+                          className={`text-sm transition-all duration-300 hover:scale-110 cursor-pointer glass-effect bg-red-900 text-foreground hover:border-pink-400 hover:text-pink-400 ${
                             hoveredProject === index ? "animate-pulse" : ""
                           }`}
                           style={{ animationDelay: `${techIndex * 100}ms` }}
@@ -460,7 +460,7 @@ export function Projects() {
                       <img
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
-                        className="w-full h-56 object-contain group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-56 object-contain group-hover:scale-90 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -481,7 +481,7 @@ export function Projects() {
                             size="sm"
                             variant="outline"
                             asChild
-                            className="glass-effect border-white/30 text-foreground hover:bg-white/20 flex-1 bg-transparent"
+                            className="glass-effect border-white/30 text-foreground hover:bg-white/20 flex-1"
                           >
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                               <Github className="w-3 h-3 mr-1" />

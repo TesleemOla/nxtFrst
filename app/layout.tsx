@@ -19,9 +19,9 @@ const sourceSans = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  title: "Tesleem Oladepo - FullStack MERN Developer",
+  title: "Tesleem Oladepo - FullStack Developer",
   description:
-    "Experienced FullStack MERN Developer with 4+ years in React.js and Node.js. Building scalable web applications with modern technologies.",
+    "Experienced FullStack Developer with 3+ years in React.js and Node.js. Building scalable web applications with modern technologies.",
 }
 
 export default function RootLayout({
@@ -30,12 +30,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}>
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}
+    >
       <body className="font-sans">
         <Navigation />
         <PageTransition>{children}</PageTransition>
         <ScrollToTop />
       </body>
     </html>
-  )
+  );
 }
