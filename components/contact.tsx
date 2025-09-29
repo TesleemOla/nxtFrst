@@ -264,7 +264,7 @@ export function Contact() {
                         name="name"
                         required
                         placeholder="Your full name"
-                        className="bg-background/50 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
+                        className="bg-background/50 placeholder:text-foreground/40 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
                       />
                     </div>
                     <div>
@@ -277,7 +277,7 @@ export function Contact() {
                         type="email"
                         required
                         placeholder="your.email@example.com"
-                        className="bg-background/50 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
+                        className="bg-background/50 placeholder:text-foreground/40 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
                       />
                     </div>
                   </div>
@@ -295,7 +295,7 @@ export function Contact() {
                       name="subject"
                       required
                       placeholder="What's this about?"
-                      className="bg-background/50 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
+                      className="bg-background/50 placeholder:text-foreground/40 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors"
                     />
                   </div>
 
@@ -313,7 +313,7 @@ export function Contact() {
                       required
                       rows={6}
                       placeholder="Tell me about your project, timeline, and any specific requirements..."
-                      className="bg-background/50 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors resize-none"
+                      className="bg-background/50 placeholder:text-foreground/40 border-border/50 focus:border-[color:var(--color-electric-blue)] transition-colors resize-none"
                     />
                   </div>
 
