@@ -40,7 +40,7 @@ export function Navigation() {
           <Link href="/" className="group">
             <div className="font-display font-bold text-2xl transition-all duration-300 group-hover:scale-105 flex items-center gap-2">
               <Sparkles className="w-6 h-6 text-pink-400 group-hover:text-cyan-400 transition-colors animate-pulse" />
-              <span className="gradient-text group-hover:animate-pulse">Tesleem Oladepo</span>
+              <span className="gradient-text group-hover:animate-pulse">T.O</span>
             </div>
           </Link>
 
@@ -73,7 +73,7 @@ export function Navigation() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-slate-200 hover:text-pink-400 transition-all duration-300 hover:scale-110 hover:bg-white/10 rounded-lg"
+            className="md:hidden p-2 text-foreground hover:text-pink-400 transition-all duration-300 hover:scale-110 hover:bg-white/10 rounded-lg"
           >
             <div className="relative w-6 h-6">
               <Menu
@@ -102,7 +102,7 @@ export function Navigation() {
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block px-4 py-3 text-sm font-medium rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-pink-400 hover:scale-105 ${
-                  isActive(item.href) ? "bg-white/10 text-pink-400 shadow-lg shadow-pink-400/20" : "text-slate-200"
+                  isActive(item.href) ? "bg-white/10 text-foreground shadow-lg shadow-pink-400/20" : "text-foreground/90"
                 }`}
                 style={{
                   animationDelay: `${index * 50}ms`,
@@ -114,7 +114,7 @@ export function Navigation() {
             ))}
             <div className="pt-2">
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button className="w-full bg-foreground text-background border-2 border-transparent hover:bg-background hover:text-foreground hover:border-foreground">
+                <Button className="w-full bg-foreground text-background border-2 border-transparent hover:bg-background/30 hover:border-foreground">
                   <Sparkles className="w-4 h-4 mr-2" />
                   Get In Touch
                 </Button>
@@ -126,7 +126,7 @@ export function Navigation() {
 
       {isMobileMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 bg-gradient-to-br from-purple-900/20 via-pink-900/20 to-purple-900/20 backdrop-blur-sm -z-10"
+          className="md:hidden fixed inset-0 bg-background backdrop-blur-sm -z-10"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
