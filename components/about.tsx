@@ -187,7 +187,7 @@ export function About() {
               <h3 className="font-display text-2xl font-bold mb-6 text-[color:var(--color-navy)]">My Journey</h3>
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p>
-                  Started my development journey 4+ years ago with a passion for creating digital experiences that
+                  Started my development journey 3+ years ago with a passion for creating digital experiences that
                   matter. I've worked with startups and established companies, building everything from e-commerce
                   platforms to SaaS applications.
                 </p>

@@ -108,7 +108,7 @@ export function Hero() {
           >
             Crafting scalable web applications with{" "}
             <span className="text-[color:var(--color-electric-blue)] font-semibold">
-              4+ years
+              3+ years
             </span>{" "}
             of experience in React.js and Node.js. Passionate about clean code,
             user experience, and modern technologies.
