@@ -22,6 +22,18 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Thank you Card Generator",
+      description: "Generate beautiful and downloadable Thank you cards with pictures you choose",
+      image: "/thank-you.jpg",
+      technologies: ["Next.js", "Tailwind CSS", "Unsplash API"],
+      liveUrl: "https://thank-you-card-gen.vercel.app/",
+      githubUrl: "https://github.com/TesleemOla/Thank-you-card-gen",
+      featured: true,
+      category: "Frontend",
+      year: "2025",
+      status: "Live",
+    },
+    {
       title: "Opinion polling system",
       description:
         "Collaborative opinion poll management tool with real-time updates, about 70% coded with Lovable code generating platform and advanced data analytics dashboard.",
