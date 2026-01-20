@@ -22,18 +22,6 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Thank you Card Generator",
-      description: "Generate beautiful and downloadable Thank you cards with pictures you choose",
-      image: "/thank-you.jpg",
-      technologies: ["Next.js", "Tailwind CSS", "Unsplash API"],
-      liveUrl: "https://thank-you-card-gen.vercel.app/",
-      githubUrl: "https://github.com/TesleemOla/Thank-you-card-gen",
-      featured: true,
-      category: "Frontend",
-      year: "2025",
-      status: "Live",
-    },
-    {
       title: "Opinion polling system",
       description:
         "Collaborative opinion poll management tool with real-time updates, about 70% coded with Lovable code generating platform and advanced data analytics dashboard.",
@@ -60,29 +48,9 @@ export function Projects() {
       status: "Live",
     },
     {
-      title: "Staff management system",
-      description:
-        "A staff management system for employees data and arrival times logging.",
-      image: "/staff-mgt.jpg",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Render",
-        "Bolt.new",
-      ],
-      liveUrl: "mstaff-mgt.vercel.app",
-      githubUrl: "https://github.com/TesleemOla/mstaff-mgt-be",
-      featured: false,
-      category: "Full-Stack",
-      year: "2025",
-      status: "Live",
-    },
-    {
       title: "Polyglot learning platform",
       description:
-        "An AI assisted language learning platform built with Gemini AI SDK",
+        "An AI assisted language learning platform",
       image: "/polyglot.jpg",
       technologies: [
         "Next.js",
@@ -97,6 +65,36 @@ export function Projects() {
       githubUrl: "#",
       featured: true,
       category: "Full-Stack",
+      year: "2025",
+      status: "Live",
+    },
+    {
+      title: "Staff management system",
+      description:
+        "A staff management system for employees data and arrival times logging.",
+      image: "/staff-mgt.jpg",
+      technologies: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Render"
+      ],
+      
+      githubUrl: "https://github.com/TesleemOla/mstaff-mgt-be",
+      featured: false,
+      category: "Backend",
+      year: "2025",
+      status: "Live",
+    },
+    {
+      title: "Thank you Card Generator",
+      description: "Generate beautiful and downloadable Thank you cards with pictures you choose",
+      image: "/thank-you.jpg",
+      technologies: ["Next.js", "Tailwind CSS", "Unsplash API"],
+      liveUrl: "https://thank-you-card-gen.vercel.app/",
+      githubUrl: "https://github.com/TesleemOla/Thank-you-card-gen",
+      featured: true,
+      category: "Frontend",
       year: "2025",
       status: "Live",
     },
