@@ -35,6 +35,19 @@ export function Projects() {
       status: "Live",
     },
     {
+      title: "Truck Tracker System",
+      description:
+        "Real-time tracking and management system for truck fleets.",
+      image: "/api-gateway-architecture.png",
+      technologies: ["Nest.js", "Websockets", "MongoDB"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/TesleemOla/truckers-be",
+      featured: true,
+      category: "Backend",
+      year: "2026",
+      status: "In Progress",
+    },
+    {
       title: "Scene Apps Website",
       description:
         "Main website for Scene Apps mobile; a full feature social media platform.",
@@ -93,7 +106,7 @@ export function Projects() {
       technologies: ["Next.js", "Tailwind CSS", "Unsplash API"],
       liveUrl: "https://thank-you-card-gen.vercel.app/",
       githubUrl: "https://github.com/TesleemOla/Thank-you-card-gen",
-      featured: true,
+      featured: false,
       category: "Frontend",
       year: "2025",
       status: "Live",
