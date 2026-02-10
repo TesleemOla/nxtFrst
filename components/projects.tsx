@@ -48,6 +48,19 @@ export function Projects() {
       status: "In Progress",
     },
     {
+      title: "Truck Tracker System",
+      description:
+        "Real-time tracking and management system for truck fleets.",
+      image: "/api-gateway-architecture.png",
+      technologies: ["Next.js", "OpenStreetMap", "Websockets", "TailwindCSS", "Leaflet"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/TesleemOla/truckers-fe",
+      featured: true,
+      category: "Frontend",
+      year: "2026",
+      status: "In Progress",
+    }
+    {
       title: "Scene Apps Website",
       description:
         "Main website for Scene Apps mobile; a full feature social media platform.",
@@ -92,7 +105,7 @@ export function Projects() {
         "MongoDB",
         "Render"
       ],
-      
+
       githubUrl: "https://github.com/TesleemOla/mstaff-mgt-be",
       featured: false,
       category: "Backend",
@@ -242,16 +255,16 @@ export function Projects() {
     }, 100)
   }, [selectedFilter, searchTerm])
 
-  useEffect(()=>{
-    if (checkMobile){
+  useEffect(() => {
+    if (checkMobile) {
       setViewMode("list")
     }
-  },[checkMobile])
+  }, [checkMobile])
   return (
     <section
       ref={sectionRef}
       className="min-h-screen py-20 relative overflow-hidden bg-background"
-      
+
     >
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-cyan-500/20 rounded-full blur-3xl animate-float" />
@@ -268,28 +281,25 @@ export function Projects() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2
-            className={`font-display text-5xl md:text-6xl font-bold mb-6 transition-all duration-1000 ease-out ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            }`}
+            className={`font-display text-5xl md:text-6xl font-bold mb-6 transition-all duration-1000 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+              }`}
           >
             <span className="gradient-text">Featured Projects</span>
           </h2>
           <p
-            className={`text-xl text-foreground max-w-3xl mx-auto mb-8 transition-all duration-1000 ease-out ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            }`}
+            className={`text-xl text-foreground max-w-3xl mx-auto mb-8 transition-all duration-1000 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+              }`}
             style={{ transitionDelay: "200ms" }}
           >
             A showcase of my recent work, demonstrating expertise across the full stack with modern technologies
           </p>
 
-         
+
 
           {/* Enhanced Search and Filter Controls */}
           <div
-            className={`flex flex-col lg:flex-row gap-6 items-center justify-center max-w-4xl mx-auto transition-all duration-1000 ease-out ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            }`}
+            className={`flex flex-col lg:flex-row gap-6 items-center justify-center max-w-4xl mx-auto transition-all duration-1000 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+              }`}
             style={{ transitionDelay: "400ms" }}
           >
             <div className="relative flex-1 max-w-md">
@@ -309,11 +319,10 @@ export function Projects() {
                   variant={selectedFilter === category ? "default" : "outline"}
                   size="sm"
                   onClick={() => setSelectedFilter(category)}
-                  className={`transition-all duration-300 h-12 px-6 ${
-                    selectedFilter === category 
+                  className={`transition-all duration-300 h-12 px-6 ${selectedFilter === category
                       ? "bg-foreground text-background hover:to-violet-600 border-0 shadow-lg"
                       : "glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
-                  }`}
+                    }`}
                 >
                   <Filter className="w-4 h-4 mr-2" />
                   {category}
@@ -326,11 +335,10 @@ export function Projects() {
                 variant="outline"
                 size="sm"
                 onClick={() => setViewMode("grid")}
-                className={`h-12 px-4 transition-all duration-300 ${
-                  viewMode === "grid"
+                className={`h-12 px-4 transition-all duration-300 ${viewMode === "grid"
                     ? "bg-cyan-500/20 border-cyan-400 text-cyan-400"
                     : "glass-effect border-white/20 text-slate-200 hover:border-cyan-400 hover:text-cyan-400"
-                }`}
+                  }`}
               >
                 <Grid className="w-4 h-4" />
               </Button>
@@ -338,11 +346,10 @@ export function Projects() {
                 variant="outline"
                 size="sm"
                 onClick={() => setViewMode("list")}
-                className={`h-12 px-4 transition-all duration-300 ${
-                  viewMode === "list"
+                className={`h-12 px-4 transition-all duration-300 ${viewMode === "list"
                     ? "bg-cyan-500/20 border-cyan-400 text-foreground"
                     : "glass-effect border-white/20 text-foreground hover:border-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 <List className="w-4 h-4" />
               </Button>
@@ -356,9 +363,8 @@ export function Projects() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={`featured-${index}`}
-                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[0.9] glass-effect border-white/20 ${
-                  visibleProjects.includes(index) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                }`}
+                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[0.9] glass-effect border-white/20 ${visibleProjects.includes(index) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                  }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
                 onMouseEnter={() => setHoveredProject(index)}
                 onMouseLeave={() => setHoveredProject(null)}
@@ -368,21 +374,18 @@ export function Projects() {
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
-                      className={`w-full h-80 lg:h-full object-contain transition-all duration-700 ${
-                        hoveredProject === index ? "scale-110" : "scale-100"
-                      }`}
+                      className={`w-full h-80 lg:h-full object-contain transition-all duration-700 ${hoveredProject === index ? "scale-110" : "scale-100"
+                        }`}
                     />
                     <div
-                      className={`absolute inset-0 bg-gradient-to-t from-purple-900/80 via-transparent to-transparent transition-opacity duration-500 ${
-                        hoveredProject === index ? "opacity-100" : "opacity-60"
-                      }`}
+                      className={`absolute inset-0 bg-gradient-to-t from-purple-900/80 via-transparent to-transparent transition-opacity duration-500 ${hoveredProject === index ? "opacity-100" : "opacity-60"
+                        }`}
                     />
 
                     {/* Enhanced Project Stats Overlay */}
                     <div
-                      className={`absolute top-6 right-6 flex flex-col gap-3 transition-all duration-500 ${
-                        hoveredProject === index ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
-                      }`}
+                      className={`absolute top-6 right-6 flex flex-col gap-3 transition-all duration-500 ${hoveredProject === index ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
+                        }`}
                     >
                       <Badge className="bg-gradient-to-r from-cyan-500 to-blue-500 text-foreground border-0 shadow-lg">
                         <Calendar className="w-3 h-3 mr-1" />
@@ -392,7 +395,7 @@ export function Projects() {
                         <TrendingUp className="w-3 h-3 mr-1" />
                         {project.status}
                       </Badge>
-                     
+
                     </div>
                   </div>
 
@@ -417,9 +420,8 @@ export function Projects() {
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
                           key={tech}
-                          className={`text-sm transition-all duration-300 hover:scale-110 cursor-pointer glass-effect bg-red-900 text-foreground hover:border-pink-400 hover:text-pink-400 ${
-                            hoveredProject === index ? "animate-pulse" : ""
-                          }`}
+                          className={`text-sm transition-all duration-300 hover:scale-110 cursor-pointer glass-effect bg-red-900 text-foreground hover:border-pink-400 hover:text-pink-400 ${hoveredProject === index ? "animate-pulse" : ""
+                            }`}
                           style={{ animationDelay: `${techIndex * 100}ms` }}
                         >
                           <Code2 className="w-4 h-4 mr-2" />
@@ -460,9 +462,8 @@ export function Projects() {
         {otherProjects.length > 0 && (
           <div ref={projectsRef}>
             <h3
-              className={`font-display text-3xl font-bold text-center mb-12 text-foreground transition-all duration-1000 ease-out ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-              }`}
+              className={`font-display text-3xl font-bold text-center mb-12 text-foreground transition-all duration-1000 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
               style={{ transitionDelay: "600ms" }}
             >
               More <span className="gradient-text">Projects</span>
@@ -474,9 +475,8 @@ export function Projects() {
                 return viewMode === "grid" ? (
                   <Card
                     key={`other-${index}`}
-                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 hover:scale-105 glass-effect border-white/20 cursor-pointer ${
-                      visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                    }`}
+                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 hover:scale-105 glass-effect border-white/20 cursor-pointer ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                      }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
                     <div className="relative overflow-hidden">
@@ -519,7 +519,7 @@ export function Projects() {
                         <Badge className="bg-gradient-to-r from-cyan-500 to-blue-500 text-foreground border-0 text-xs shadow-lg">
                           {project.year}
                         </Badge>
-                       
+
                       </div>
                     </div>
 
@@ -555,9 +555,8 @@ export function Projects() {
                   // List View
                   <Card
                     key={`other-list-${index}`}
-                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 glass-effect border-white/20 ${
-                      visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                    }`}
+                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 glass-effect border-white/20 ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                      }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
                     <div className="grid md:grid-cols-4 gap-6 p-6">
