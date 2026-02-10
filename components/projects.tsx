@@ -53,13 +53,13 @@ export function Projects() {
         "Real-time tracking and management system for truck fleets.",
       image: "/api-gateway-architecture.png",
       technologies: ["Next.js", "OpenStreetMap", "Websockets", "TailwindCSS", "Leaflet"],
-      liveUrl: "#",
+      liveUrl: "https://truckers-fe.vercel.app",
       githubUrl: "https://github.com/TesleemOla/truckers-fe",
       featured: true,
       category: "Frontend",
       year: "2026",
       status: "In Progress",
-    }
+    },
     {
       title: "Scene Apps Website",
       description:
@@ -320,8 +320,8 @@ export function Projects() {
                   size="sm"
                   onClick={() => setSelectedFilter(category)}
                   className={`transition-all duration-300 h-12 px-6 ${selectedFilter === category
-                      ? "bg-foreground text-background hover:to-violet-600 border-0 shadow-lg"
-                      : "glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
+                    ? "bg-foreground text-background hover:to-violet-600 border-0 shadow-lg"
+                    : "glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
                     }`}
                 >
                   <Filter className="w-4 h-4 mr-2" />
@@ -336,8 +336,8 @@ export function Projects() {
                 size="sm"
                 onClick={() => setViewMode("grid")}
                 className={`h-12 px-4 transition-all duration-300 ${viewMode === "grid"
-                    ? "bg-cyan-500/20 border-cyan-400 text-cyan-400"
-                    : "glass-effect border-white/20 text-slate-200 hover:border-cyan-400 hover:text-cyan-400"
+                  ? "bg-cyan-500/20 border-cyan-400 text-cyan-400"
+                  : "glass-effect border-white/20 text-slate-200 hover:border-cyan-400 hover:text-cyan-400"
                   }`}
               >
                 <Grid className="w-4 h-4" />
@@ -347,8 +347,8 @@ export function Projects() {
                 size="sm"
                 onClick={() => setViewMode("list")}
                 className={`h-12 px-4 transition-all duration-300 ${viewMode === "list"
-                    ? "bg-cyan-500/20 border-cyan-400 text-foreground"
-                    : "glass-effect border-white/20 text-foreground hover:border-foreground hover:text-foreground"
+                  ? "bg-cyan-500/20 border-cyan-400 text-foreground"
+                  : "glass-effect border-white/20 text-foreground hover:border-foreground hover:text-foreground"
                   }`}
               >
                 <List className="w-4 h-4" />
