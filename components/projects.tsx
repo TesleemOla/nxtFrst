@@ -51,7 +51,7 @@ export function Projects() {
       title: "Truck Tracker System",
       description:
         "Real-time tracking and management system for truck fleets.",
-      image: "/api-gateway-architecture.png",
+      image: "/travel tracker.jpg",
       technologies: ["Next.js", "OpenStreetMap", "Websockets", "TailwindCSS", "Leaflet"],
       liveUrl: "https://truckers-fe.vercel.app",
       githubUrl: "https://github.com/TesleemOla/truckers-fe",
