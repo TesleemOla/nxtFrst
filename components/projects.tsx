@@ -267,13 +267,13 @@ export function Projects() {
 
     >
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-cyan-500/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-linear-to-r from-pink-500/20 to-cyan-500/20 rounded-full blur-3xl animate-float" />
         <div
-          className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-gradient-to-r from-emerald-500/20 to-violet-500/20 rounded-full blur-3xl animate-float"
+          className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-linear-to-r from-emerald-500/20 to-violet-500/20 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "2s" }}
         />
         <div
-          className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-amber-500/20 to-pink-500/20 rounded-full blur-2xl animate-float"
+          className="absolute top-1/2 left-1/2 w-64 h-64 bg-linear-to-r from-amber-500/20 to-pink-500/20 rounded-full blur-2xl animate-float"
           style={{ animationDelay: "4s" }}
         />
       </div>

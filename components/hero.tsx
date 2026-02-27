@@ -31,7 +31,7 @@ export function Hero() {
   ]
 
   return (
-    <section className="min-h-screen pt-40 flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-background/95">
+    <section className="min-h-screen pt-40 flex items-center justify-center relative overflow-hidden bg-linear-to-br from-background via-background to-background/95">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-30">
         <div
@@ -56,7 +56,7 @@ export function Hero() {
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 bg-[color:var(--color-electric-blue)]/20 rounded-full animate-pulse"
+            className="absolute w-2 h-2 bg-(--color-electric-blue)/20 rounded-full animate-pulse"
             style={{
               left: `${20 + i * 15}%`,
               top: `${30 + (i % 2) * 40}%`,
@@ -92,8 +92,8 @@ export function Hero() {
               style={{ transitionDelay: "600ms" }}
             >
               A FullStack{" "}
-              <span className="text-[color:var(--color-warm-orange)] font-semibold relative">
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[color:var(--color-warm-orange)] animate-pulse" />
+              <span className="text-(--color-warm-orange) font-semibold relative">
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-(--color-warm-orange) animate-pulse" />
               </span>{" "}
               Developer
             </h2>
@@ -107,8 +107,8 @@ export function Hero() {
             style={{ transitionDelay: "800ms" }}
           >
             Crafting scalable web applications with{" "}
-            <span className="text-[color:var(--color-electric-blue)] font-semibold">
-              3+ years
+            <span className="text-(--color-electric-blue) font-semibold">
+              4+ years
             </span>{" "}
             of experience in React.js and Node.js. Passionate about clean code,
             user experience, and modern technologies.
@@ -129,7 +129,7 @@ export function Hero() {
               >
                 <tech.icon
                   size={32}
-                  className="text-[color:var(--color-electric-blue)] group-hover:text-[color:var(--color-warm-orange)] transition-colors duration-300"
+                  className="text-(--color-electric-blue) group-hover:text-(--color-warm-orange) transition-colors duration-300"
                 />
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                   {tech.name}
@@ -159,7 +159,7 @@ export function Hero() {
               <Button
                 size="lg" 
                 variant="outline"
-                className="border-[color:var(--color-electric-blue)] text-[color:var(--color-electric-blue)]  hover:scale-105 bg-transparent"
+                className="border-(--color-electric-blue) text-(--color-electric-blue)  hover:scale-105 bg-transparent"
               >
                 Let's Talk
               </Button>
@@ -189,7 +189,7 @@ export function Hero() {
               <a
                 key={social.label}
                 href={social.href}
-                className={`group p-3 rounded-full ${social.label === "GitHub"? "text-white bg-black": social.label === "LinkedIn" ? "text-white bg-blue-800 rounded-none": "bg-red-600 text-white"} hover:text-[color:var(--color-electric-blue)] hover:bg-[color:var(--color-electric-blue)]/10 transition-all duration-300 hover:scale-110`}
+                className={`group p-3 rounded-full ${social.label === "GitHub"? "text-white bg-black": social.label === "LinkedIn" ? "text-white bg-blue-800 rounded-none": "bg-red-600 text-white"} hover:text-(--color-electric-blue) hover:bg-(--color-electric-blue)/10 transition-all duration-300 hover:scale-110`}
                 aria-label={social.label}
               >
                 <social.icon
@@ -204,7 +204,7 @@ export function Hero() {
         {/* Scroll Indicator */}
         <Link href="/about">
           <button
-            className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 p-2 rounded-full text-muted-foreground hover:text-[color:var(--color-electric-blue)] transition-all duration-300 hover:scale-110 ${
+            className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 p-2 rounded-full text-muted-foreground hover:text-(--color-electric-blue) transition-all duration-300 hover:scale-110 ${
               isLoaded ? "animate-bounce" : ""
             }`}
             style={{ animationDelay: "1600ms" }}
@@ -215,9 +215,9 @@ export function Hero() {
       </div>
 
       {/* Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[color:var(--color-electric-blue)]/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-(--color-electric-blue)/10 rounded-full blur-3xl animate-pulse" />
       <div
-        className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-[color:var(--color-warm-orange)]/10 rounded-full blur-3xl animate-pulse"
+        className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-(--color-warm-orange)/10 rounded-full blur-3xl animate-pulse"
         style={{ animationDelay: "1s" }}
       />
     </section>
