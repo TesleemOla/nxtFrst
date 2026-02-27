@@ -5,6 +5,7 @@ import "./globals.css"
 import { PageTransition } from "@/components/page-transition"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Navigation } from "@/components/navigation"
+import { GlobalBackground } from "@/components/global-background"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -34,10 +35,13 @@ export default function RootLayout({
       lang="en"
       className={`${spaceGrotesk.variable} ${sourceSans.variable} antialiased`}
     >
-      <body className="font-sans">
-        <Navigation />
-        <PageTransition>{children}</PageTransition>
-        <ScrollToTop />
+      <body className="font-sans relative min-h-screen overflow-x-hidden bg-linear-to-br from-background via-background to-background/95">
+        <GlobalBackground />
+        <div className="relative z-10">
+          <Navigation />
+          <PageTransition>{children}</PageTransition>
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );

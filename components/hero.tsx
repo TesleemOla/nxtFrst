@@ -2,71 +2,25 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail, Code, Database, Server, Code2Icon, FileJson } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Code, Database, Server, FileJson } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
     setIsLoaded(true)
-
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100,
-      })
-    }
-
-    window.addEventListener("mousemove", handleMouseMove)
-    return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
   const techStack = [
     { icon: Code, name: "React.js", delay: "0ms" },
-    {icon: FileJson , name: "Next.js", delay: "200ms"},
+    { icon: FileJson, name: "Next.js", delay: "200ms" },
     { icon: Server, name: "Node.js", delay: "200ms" },
     { icon: Database, name: "MongoDB", delay: "400ms" },
   ]
 
   return (
-    <section className="min-h-screen pt-40 flex items-center justify-center relative overflow-hidden bg-linear-to-br from-background via-background to-background/95">
-      {/* Animated Background */}
-      <div className="absolute inset-0 opacity-30">
-        <div
-          className="absolute inset-0 transition-transform duration-1000 ease-out"
-          style={{
-            backgroundImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, var(--color-electric-blue) 0%, transparent 50%)`,
-            transform: `translate(${mousePosition.x * 0.02}px, ${
-              mousePosition.y * 0.02
-            }px)`,
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23000000' fillOpacity='0.05'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(6)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-(--color-electric-blue)/20 rounded-full animate-pulse"
-            style={{
-              left: `${20 + i * 15}%`,
-              top: `${30 + (i % 2) * 40}%`,
-              animationDelay: `${i * 0.5}s`,
-              animationDuration: `${2 + i * 0.5}s`,
-            }}
-          />
-        ))}
-      </div>
-
+    <section className="min-h-screen pt-40 flex items-center justify-center relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         <div className="space-y-8">
           {/* Main Heading with Staggered Animation */}
@@ -121,7 +75,7 @@ export function Hero() {
             }`}
             style={{ transitionDelay: "1000ms" }}
           >
-            {techStack.map((tech, index) => (
+            {techStack.map((tech) => (
               <div
                 key={tech.name}
                 className="group flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-accent/50 transition-all duration-300 hover:scale-110"
@@ -157,7 +111,7 @@ export function Hero() {
             </Link>
             <Link href="/contact">
               <Button
-                size="lg" 
+                size="lg"
                 variant="outline"
                 className="border-(--color-electric-blue) text-(--color-electric-blue)  hover:scale-105 bg-transparent"
               >
@@ -189,7 +143,7 @@ export function Hero() {
               <a
                 key={social.label}
                 href={social.href}
-                className={`group p-3 rounded-full ${social.label === "GitHub"? "text-white bg-black": social.label === "LinkedIn" ? "text-white bg-blue-800 rounded-none": "bg-red-600 text-white"} hover:text-(--color-electric-blue) hover:bg-(--color-electric-blue)/10 transition-all duration-300 hover:scale-110`}
+                className={`group p-3 rounded-full ${social.label === "GitHub" ? "text-white bg-black" : social.label === "LinkedIn" ? "text-white bg-blue-800 rounded-none" : "bg-red-600 text-white"} hover:text-(--color-electric-blue) hover:bg-(--color-electric-blue)/10 transition-all duration-300 hover:scale-110`}
                 aria-label={social.label}
               >
                 <social.icon
@@ -213,13 +167,6 @@ export function Hero() {
           </button>
         </Link>
       </div>
-
-      {/* Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-(--color-electric-blue)/10 rounded-full blur-3xl animate-pulse" />
-      <div
-        className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-(--color-warm-orange)/10 rounded-full blur-3xl animate-pulse"
-        style={{ animationDelay: "1s" }}
-      />
     </section>
-  );
+  )
 }

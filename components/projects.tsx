@@ -263,7 +263,7 @@ export function Projects() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen py-20 relative overflow-hidden bg-background"
+      className="min-h-screen py-20 relative overflow-hidden bg-background/45 backdrop-blur-[1px]"
 
     >
       <div className="absolute inset-0 opacity-30">
@@ -302,13 +302,13 @@ export function Projects() {
               }`}
             style={{ transitionDelay: "400ms" }}
           >
-            <div className="relative flex-1 max-w-md">
+            <div className="relative flex-1 max-w-md border-2 border-slate-600 rounded-lg overflow-hidden">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
               <Input
                 placeholder="Search projects, technologies..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-12 h-12 glass-effect border-white/20 text-foreground placeholder:text-slate-400 focus:border-pink-400 focus:ring-pink-400/20"
+                className="pl-12 h-12 glass-effect border-slate-600 border-2 text-foreground  placeholder:text-slate-400 focus:border-pink-400 focus:ring-pink-400/20"
               />
             </div>
 
@@ -321,7 +321,7 @@ export function Projects() {
                   onClick={() => setSelectedFilter(category)}
                   className={`transition-all duration-300 h-12 px-6 ${selectedFilter === category
                     ? "bg-foreground text-background hover:to-violet-600 border-0 shadow-lg"
-                    : "glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
+                    : "glass-effect border-slate-600 text-foreground hover:bg-white/10 hover:border-pink-400 hover:text-pink-400"
                     }`}
                 >
                   <Filter className="w-4 h-4 mr-2" />
@@ -337,7 +337,7 @@ export function Projects() {
                 onClick={() => setViewMode("grid")}
                 className={`h-12 px-4 transition-all duration-300 ${viewMode === "grid"
                   ? "bg-cyan-500/20 border-cyan-400 text-cyan-400"
-                  : "glass-effect border-white/20 text-slate-200 hover:border-cyan-400 hover:text-cyan-400"
+                  : "glass-effect border-slate-600 text-slate-200 hover:border-cyan-400 hover:text-cyan-400"
                   }`}
               >
                 <Grid className="w-4 h-4" />
@@ -348,7 +348,7 @@ export function Projects() {
                 onClick={() => setViewMode("list")}
                 className={`h-12 px-4 transition-all duration-300 ${viewMode === "list"
                   ? "bg-cyan-500/20 border-cyan-400 text-foreground"
-                  : "glass-effect border-white/20 text-foreground hover:border-foreground hover:text-foreground"
+                  : "glass-effect border-slate-600 text-foreground hover:border-foreground hover:text-foreground"
                   }`}
               >
                 <List className="w-4 h-4" />
@@ -363,7 +363,7 @@ export function Projects() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={`featured-${index}`}
-                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[0.9] glass-effect border-white/20 ${visibleProjects.includes(index) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                className={`overflow-hidden group hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-700 hover:scale-[0.9] glass-effect border-slate-600 ${visibleProjects.includes(index) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                   }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
                 onMouseEnter={() => setHoveredProject(index)}
@@ -406,7 +406,7 @@ export function Projects() {
                           <Star className="w-4 h-4 mr-2" />
                           Featured Project
                         </Badge>
-                        <Badge className="glass-effect border-white/20 text-foreground px-3 py-1">
+                        <Badge className="glass-effect border-slate-600 text-foreground px-3 py-1">
                           {project.category}
                         </Badge>
                       </div>
@@ -443,7 +443,7 @@ export function Projects() {
                       <Button
                         variant="outline"
                         asChild
-                        className="glass-effect border-white/20 text-foreground hover:bg-white/10 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 hover:scale-105 group/btn px-8 py-3 bg-transparent"
+                        className="glass-effect border-slate-600 text-foreground hover:bg-white/10 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 hover:scale-105 group/btn px-8 py-3 bg-transparent"
                       >
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="w-5 h-5 mr-2 group-hover/btn:rotate-12 transition-transform" />
@@ -475,7 +475,7 @@ export function Projects() {
                 return viewMode === "grid" ? (
                   <Card
                     key={`other-${index}`}
-                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 hover:scale-105 glass-effect border-white/20 cursor-pointer ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 hover:scale-105 glass-effect border-slate-600 cursor-pointer ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                       }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
@@ -528,7 +528,7 @@ export function Projects() {
                         <h4 className="font-display font-semibold text-xl text-foreground group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
                           {project.title}
                         </h4>
-                        <Badge className="glass-effect border-white/20 text-foreground text-xs">
+                        <Badge className="glass-effect border-slate-600 text-foreground text-xs">
                           {project.category}
                         </Badge>
                       </div>
@@ -555,7 +555,7 @@ export function Projects() {
                   // List View
                   <Card
                     key={`other-list-${index}`}
-                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 glass-effect border-white/20 ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                    className={`overflow-hidden group hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-500 glass-effect border-slate-600 ${visibleProjects.includes(actualIndex) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                       }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
@@ -572,14 +572,14 @@ export function Projects() {
                           <h4 className="font-display font-semibold text-lg text-foreground group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
                             {project.title}
                           </h4>
-                          <Badge className="glass-effect border-white/20 text-foreground text-xs">
+                          <Badge className="glass-effect border-slate-600 text-foreground text-xs">
                             {project.category}
                           </Badge>
                         </div>
                         <p className="text-foreground text-sm mb-3">{project.description}</p>
                         <div className="flex flex-wrap gap-1">
                           {project.technologies.slice(0, 4).map((tech) => (
-                            <Badge key={tech} className="text-xs glass-effect border-white/20 text-foreground">
+                            <Badge key={tech} className="text-xs glass-effect border-slate-600 text-foreground">
                               {tech}
                             </Badge>
                           ))}
@@ -605,7 +605,7 @@ export function Projects() {
                             size="sm"
                             variant="outline"
                             asChild
-                            className="glass-effect border-white/20 text-foreground hover:bg-white/10 bg-transparent"
+                            className="glass-effect border-slate-600 text-foreground hover:bg-white/10 bg-transparent"
                           >
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                               <Github className="w-3 h-3" />
