@@ -105,7 +105,7 @@ export function Contact() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-background/40 relative overflow-hidden backdrop-blur-[1px]"
+      className="py-20 bg-background/18 relative overflow-hidden backdrop-blur-[0.5px]"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">

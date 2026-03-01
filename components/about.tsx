@@ -112,7 +112,7 @@ export function About() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-gradient-to-br from-background/45 to-background/30 relative overflow-hidden backdrop-blur-[1px]"
+      className="py-20 bg-gradient-to-br from-background/20 to-background/12 relative overflow-hidden backdrop-blur-[0.5px]"
     >
       {/* Background Elements
       <div className="absolute inset-0 opacity-30">

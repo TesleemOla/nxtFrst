@@ -263,7 +263,7 @@ export function Projects() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen py-20 relative overflow-hidden bg-background/45 backdrop-blur-[1px]"
+      className="min-h-screen py-20 relative overflow-hidden bg-background/20 backdrop-blur-[0.5px]"
 
     >
       <div className="absolute inset-0 opacity-30">

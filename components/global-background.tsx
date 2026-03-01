@@ -11,9 +11,9 @@ export function GlobalBackground() {
     if (!container) return
 
     const balls = [
-      { x: 0, y: 0, vx: 1.7, vy: 1.3, size: 180 },
-      { x: 0, y: 0, vx: -1.4, vy: 1.8, size: 160 },
-      { x: 0, y: 0, vx: 1.5, vy: -1.6, size: 140 },
+      { x: 0, y: 0, vx: 2.4, vy: 1.8, size: 220, centerBoost: 0 },
+      { x: 0, y: 0, vx: -2.1, vy: 2.3, size: 190, centerBoost: 0 },
+      { x: 0, y: 0, vx: 2.0, vy: -2.2, size: 165, centerBoost: 0 },
     ]
 
     let width = 0
@@ -28,12 +28,20 @@ export function GlobalBackground() {
 
     const initializeBalls = () => {
       updateBounds()
-      const centerX = width / 2
-      const centerY = height / 2
 
       balls.forEach((ball, index) => {
-        ball.x = centerX + (index - 1) * 130 - ball.size / 2
-        ball.y = centerY + (index % 2 === 0 ? -90 : 90) - ball.size / 2
+        const maxX = Math.max(width - ball.size, 1)
+        const maxY = Math.max(height - ball.size, 1)
+        if (index === 0) {
+          ball.x = maxX * 0.1
+          ball.y = maxY * 0.12
+        } else if (index === 1) {
+          ball.x = maxX * 0.78
+          ball.y = maxY * 0.2
+        } else {
+          ball.x = maxX * 0.4
+          ball.y = maxY * 0.72
+        }
       })
     }
 
@@ -47,8 +55,9 @@ export function GlobalBackground() {
         const ballCenterX = ball.x + ball.size / 2
         const ballCenterY = ball.y + ball.size / 2
 
-        ball.vx += ((centerX - ballCenterX) / Math.max(width, 1)) * 0.06
-        ball.vy += ((centerY - ballCenterY) / Math.max(height, 1)) * 0.06
+        const attraction = 0.012 + ball.centerBoost
+        ball.vx += ((centerX - ballCenterX) / Math.max(width, 1)) * attraction
+        ball.vy += ((centerY - ballCenterY) / Math.max(height, 1)) * attraction
 
         ball.x += ball.vx
         ball.y += ball.vy
@@ -56,23 +65,26 @@ export function GlobalBackground() {
         if (ball.x <= 0 || ball.x >= maxX) {
           ball.x = Math.min(Math.max(ball.x, 0), maxX)
           ball.vx *= -1
+          ball.centerBoost = 0.08
         }
 
         if (ball.y <= 0 || ball.y >= maxY) {
           ball.y = Math.min(Math.max(ball.y, 0), maxY)
           ball.vy *= -1
+          ball.centerBoost = 0.08
         }
 
-        ball.vx *= 0.998
-        ball.vy *= 0.998
+        ball.vx *= 0.999
+        ball.vy *= 0.999
+        ball.centerBoost *= 0.985
 
         const speed = Math.hypot(ball.vx, ball.vy)
-        if (speed > 3.2) {
-          const scale = 3.2 / speed
+        if (speed > 4.4) {
+          const scale = 4.4 / speed
           ball.vx *= scale
           ball.vy *= scale
-        } else if (speed < 0.8) {
-          const scale = 0.8 / Math.max(speed, 0.001)
+        } else if (speed < 1.4) {
+          const scale = 1.4 / Math.max(speed, 0.001)
           ball.vx *= scale
           ball.vy *= scale
         }
@@ -99,45 +111,46 @@ export function GlobalBackground() {
   return (
     <div ref={backgroundRef} className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       <div
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: "radial-gradient(circle at center, var(--primary) 0%, transparent 62%)",
+          backgroundImage:
+            "radial-gradient(circle at 20% 20%, var(--primary) 0%, transparent 38%), radial-gradient(circle at 80% 25%, var(--accent) 0%, transparent 40%), radial-gradient(circle at 50% 80%, var(--chart-3) 0%, transparent 42%)",
         }}
       />
       <div
         ref={(el) => {
           ballRefs.current[0] = el
         }}
-        className="absolute rounded-full blur-2xl opacity-45"
+        className="absolute rounded-full blur-2xl opacity-30"
         style={{
-          width: "180px",
-          height: "180px",
+          width: "220px",
+          height: "220px",
           background: "var(--primary)",
-          boxShadow: "0 0 72px var(--primary)",
+          boxShadow: "0 0 80px var(--primary)",
         }}
       />
       <div
         ref={(el) => {
           ballRefs.current[1] = el
         }}
-        className="absolute rounded-full blur-2xl opacity-40"
+        className="absolute rounded-full blur-2xl opacity-28"
         style={{
-          width: "160px",
-          height: "160px",
+          width: "190px",
+          height: "190px",
           background: "var(--accent)",
-          boxShadow: "0 0 68px var(--accent)",
+          boxShadow: "0 0 76px var(--accent)",
         }}
       />
       <div
         ref={(el) => {
           ballRefs.current[2] = el
         }}
-        className="absolute rounded-full blur-2xl opacity-35"
+        className="absolute rounded-full blur-2xl opacity-26"
         style={{
-          width: "140px",
-          height: "140px",
+          width: "165px",
+          height: "165px",
           background: "var(--chart-3)",
-          boxShadow: "0 0 62px var(--chart-3)",
+          boxShadow: "0 0 70px var(--chart-3)",
         }}
       />
     </div>
