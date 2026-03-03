@@ -22,19 +22,6 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Opinion polling system",
-      description:
-        "Collaborative opinion poll management tool with real-time updates, about 70% coded with Lovable code generating platform and advanced data analytics dashboard.",
-      image: "/opinion.jpg",
-      technologies: ["Next.js", "SQL", "Supabase", "Tailwind CSS", "Chart.js"],
-      liveUrl: "https://opinion-nexus-voter.lovable.app/",
-      githubUrl: "#",
-      featured: true,
-      category: "SaaS",
-      year: "2025",
-      status: "Live",
-    },
-    {
       title: "Truck Tracker System",
       description:
         "Real-time tracking and management system for truck fleets.",
@@ -51,7 +38,7 @@ export function Projects() {
       title: "Truck Tracker System",
       description:
         "Real-time tracking and management system for truck fleets.",
-      image: "/travel tracker.jpg",
+      image: "/truckers.png",
       technologies: ["Next.js", "OpenStreetMap", "Websockets", "TailwindCSS", "Leaflet"],
       liveUrl: "https://truckers-fe.vercel.app",
       githubUrl: "https://github.com/TesleemOla/truckers-fe",
@@ -60,6 +47,20 @@ export function Projects() {
       year: "2026",
       status: "In Progress",
     },
+    {
+      title: "Opinion polling system",
+      description:
+        "Collaborative opinion poll management tool with real-time updates, about 70% coded with Lovable code generating platform and advanced data analytics dashboard.",
+      image: "/opinion.jpg",
+      technologies: ["Next.js", "SQL", "Supabase", "Tailwind CSS", "Chart.js"],
+      liveUrl: "https://opinion-nexus-voter.lovable.app/",
+      githubUrl: "#",
+      featured: true,
+      category: "SaaS",
+      year: "2025",
+      status: "Live",
+    },
+    
     {
       title: "Scene Apps Website",
       description:
